@@ -1,0 +1,72 @@
+.galaxy{
+	-webkit-perspective: 600px;
+	padding: 100px;
+}
+.system{
+	-webkit-transform: rotateX( 45deg );
+	border:1px solid black;
+}
+.system{
+	margin: 0;
+	padding:0;
+	position: relative;
+	height:600px;
+}
+.system li{
+	position: absolute;
+	display: block;
+	-webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+	border-radius:50%;
+	border:1px solid red;
+}
+.system li span{
+	background-color: #DDD;
+	border-radius:50%;
+	/*padding: 30px;*/
+	border:1px solid lime;
+	width:50px;
+	height:50px;
+	text-align:center;
+	vertical-align: middle;
+	line-height:50px;
+}
+
+.mercury{
+	width:100px;
+	height:100px;
+}
+.venus{
+	width:160px;
+	height:160px
+	;
+}
+.earth{
+	width:220px;
+	height:220px;
+}
+.mars{
+	width:280px;
+	height:280px;
+}
+.jupiter{
+	width:340px;
+	height:340px;
+}
+.saturn{
+	width:400px;
+	height:400px;
+}
+.uranus{
+	width:460px;
+	height:460px;
+}
+
+@-webkit-keyframes orbit { 
+	from { -webkit-transform:rotate(0deg) } 
+	to { -webkit-transform:rotate(360deg) } 
+}
+
+
