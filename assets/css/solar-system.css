@@ -1,72 +1,112 @@
 .galaxy{
-	-webkit-perspective: 600px;
-	padding: 100px;
+	perspective: 500px;
+	perspective-origin: 50% 50%;
+	margin-top:-20%;
 }
 .system{
-	-webkit-transform: rotateX( 45deg );
+	transform: rotateX( 50deg );
 	border:1px solid black;
 }
 .system{
-	margin: 0;
-	padding:0;
-	position: relative;
-	height:600px;
+	margin:auto;
+	padding:auto;
+	position:relative;
+	height:800px;
+	width:800px;
 }
 .system li{
 	position: absolute;
+	left:50%;
+	top:50%;
 	display: block;
-	-webkit-animation-iteration-count:infinite;
-    -webkit-animation-timing-function:linear;
-    -webkit-animation-name:orbit;
-    -webkit-animation-duration:5s;
+	animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-name:orbit;
+    animation-duration:5s;
 	border-radius:50%;
-	border:1px solid red;
+	border:1px solid gray;
 }
-.system li span{
+.system:hover li{
+	background: rgba(0, 0, 0, .1);
+	animation-play-state: paused;
+	transform: rotateX( -80deg );
+}
+.system li i{
+	position: absolute;
+	top:66%;
 	background-color: #DDD;
 	border-radius:50%;
-	/*padding: 30px;*/
 	border:1px solid lime;
-	width:50px;
-	height:50px;
+	width:40px;
+	height:40px;
 	text-align:center;
 	vertical-align: middle;
 	line-height:50px;
 }
-
-.mercury{
-	width:100px;
-	height:100px;
-}
-.venus{
-	width:160px;
-	height:160px
-	;
-}
-.earth{
-	width:220px;
-	height:220px;
-}
-.mars{
-	width:280px;
-	height:280px;
-}
-.jupiter{
-	width:340px;
-	height:340px;
-}
-.saturn{
-	width:400px;
-	height:400px;
-}
-.uranus{
-	width:460px;
-	height:460px;
+.system:hover i{
+	background: rgba(255, 0, 0, 1);
 }
 
-@-webkit-keyframes orbit { 
-	from { -webkit-transform:rotate(0deg) } 
-	to { -webkit-transform:rotate(360deg) } 
+.system .mercury{
+	width:10%;
+	height:10%;
+	margin-left:-5%;
+	margin-top:-5%;
+	animation-duration:5s;
+}
+.system .venus{
+	width:16%;
+	height:16%;
+	margin-left:-8%;
+	margin-top:-8%;
+	animation-duration:8s;
+}
+.system .earth{
+	width:22%;
+	height:22%;
+	margin-left:-11%;
+	margin-top:-11%;
+	animation-duration:12s;
+}
+.system .mars{
+	width:28%;
+	height:28%;
+	margin-left:-14%;
+	margin-top:-14%;
+	animation-duration:20s;
+}
+.system .jupiter{
+	width:34%;
+	height:34%;
+	margin-left:-17%;
+	margin-top:-17%;
+	animation-duration:30s;
+}
+.system .saturn{
+	width:40%;
+	height:40%;
+	margin-left:-20%;
+	margin-top:-20%;
+	animation-duration:60s;
+}
+.system .uranus{
+	width:46%;
+	height:46%;
+	margin-left:-23%;
+	margin-top:-23%;
+	animation-duration:70s;
+}
+.system .neptune{
+	width:56%;
+	height:56%;
+	margin-left:-28%;
+	margin-top:-28%;
+	animation-duration:100s;
+}
+
+@keyframes orbit { 
+	from { transform:rotate(0deg) } 
+	to { transform:rotate(360deg) } 
 }
 
 
