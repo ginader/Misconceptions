@@ -1,10 +1,10 @@
 .galaxy{
   	display: none;
-	-webkit-perspective: 400px;
-	-moz-perspective: 400px;
-	-o-perspective: 400px;
-	-ms-perspective: 400px;
-	perspective: 400px;
+	-webkit-perspective: 300px;
+	-moz-perspective: 300px;
+	-o-perspective: 300px;
+	-ms-perspective: 300px;
+	perspective: 300px;
 	-webkit-perspective-origin: 50% 50%;
 	-moz-perspective-origin: 50% 50%;
 	-o-perspective-origin: 50% 50%;
@@ -14,6 +14,7 @@
 	margin-bottom:-20%;
 }
 .system{
+	/*background-color: black;*/
 	-webkit-transform: rotateX( 50deg );
 	-moz-transform: rotateX( 50deg );
 	-o-transform: rotateX( 50deg );
@@ -52,7 +53,8 @@
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
 	border-radius:50%;
-	border:1px solid gray;
+	border:1px solid #ccc;
+	border:1px solid rgba(0, 0, 0, .1);
 }
 /*.system:hover li{
 	background: rgba(0, 0, 0, .1);
@@ -85,11 +87,11 @@
 }*/
 
 .system .sun{
-	width:2%;
-	height:2%;
-	margin-left:-1%;
-	margin-top:-1%;
-	background-color: yellow;
+	width:3%;
+	height:3%;
+	margin-left:-3%;
+	margin-top:-3%;
+	border:none;
 }
 
 .system .mercury{
@@ -126,7 +128,7 @@
 	animation-duration:12s;
 }
 .system .earth i{
-	border:1px solid red;
+	/*border:1px solid red;*/
 }
 .system .mars{
 	width:28%;
