@@ -13,7 +13,7 @@
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 
-		No. The Sun is at the center of the solar system, and the planets (Earth is one of them), asteroids, moons, and comets orbit the Sun. The Earth is the third planet from the Sun.
+		The Sun is at the center of the solar system, and the planets (Earth is one of them), asteroids, moons, and comets orbit the Sun. The Earth is the third planet from the Sun.
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://amazing-space.stsci.edu/resources/myths/solar_system.php.p=Capture+the+cosmos@,capture,%3ESolar+system@,capture,solarsyst," id="more">I want to learn more about stars!</a>
