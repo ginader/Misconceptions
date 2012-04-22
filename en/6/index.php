@@ -12,8 +12,8 @@
 	<h2><?php echo $answer ?></h2>
 	<img src="/assets/img/img-moon-earth.png" alt="Moon and Earth in the same view with shadows.">	
 	<p>
-		<strong class="no">Wrong.</strong>
-		<strong class="yes">Correct!</strong> 
+		<strong class="no">Correct!</strong>
+		<strong class="yes">No.</strong> 
 Just like the planets, our Moon does not produce its own light. It "shines" because it reflects the Sun's light. As our Moon orbits around Earth, the side facing the Sun is always 
 illuminated, just like Earth's daylight side is illuminated by the Sun.
 	</p>
