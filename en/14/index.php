@@ -1,7 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-			<img src="/assets/img/img-sun.png" alt="The Sun.">
+	<img src="/assets/img/img-sun.png" alt="The Sun.">
 	<p>The sun is the largest object in the solar system. It is larger than the earth.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
@@ -10,7 +10,7 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
-				<img src="/assets/img/img-solar-system.png" alt="The solar system.">
+	<img src="/assets/img/img-solar-system.png" alt="The solar system.">
 	<p>
 		<strong class="no">Wrong.</strong>
 		<strong class="yes">Correct!</strong> 

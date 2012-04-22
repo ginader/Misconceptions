@@ -1,6 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
+	<img src="/assets/img/img-stars-4.png" alt="Stars in the galaxy.">	
 	<p>All the stars in a constellation are near each other.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
@@ -9,6 +10,7 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
+		<img src="/assets/img/img-stars-3.png" alt="Stars in the galaxy.">	
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 

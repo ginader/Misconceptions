@@ -1,6 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
+	<img src="/assets/img/img-meteor.png" alt="Meteors and Auora in the sky.">	
 	<p>Meteors are falling stars.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
@@ -9,6 +10,7 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
+	<img src="/assets/img/img-meteor-2.png" alt="Meteors and Auora in the sky.">		
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 
