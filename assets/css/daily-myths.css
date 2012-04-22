@@ -47,7 +47,7 @@ h1{
 
 .container {
   width: 400px;
-  min-height: 450px;
+  min-height: 500px;
   position: relative;
   margin: 0 auto 40px;
   -webkit-perspective: 800px;
@@ -117,14 +117,22 @@ h1{
        -o-transform: rotateY( 180deg );
           transform: rotateY( 180deg );
 }
-
+#card p{
+  min-height:90px;
+}
 #card p,
 #card h2{
 	margin: 1em;
 }
 
+#card h2{
+  margin:.5em;
+}
 #card .cta{
-	padding: 1em;
+	/*padding: 1em;*/
+  position: absolute;
+  bottom:0;
+  width:100%;
 }
 #card button,
 #card a.button{
@@ -144,7 +152,7 @@ h1{
 	background: -ms-linear-gradient(top,  #5b5b5b 0%,#585858 9%,#4d4d4d 27%,#282828 75%,#1a1a1a 100%);
 	background: linear-gradient(top,  #5b5b5b 0%,#585858 9%,#4d4d4d 27%,#282828 75%,#1a1a1a 100%);
 	color:#fff;
-	width:100%;
+	width:80%;
 	margin-bottom:1em;
 	padding: .5em;
   text-decoration:none;
@@ -152,6 +160,8 @@ h1{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
+  margin-right:auto;
+  margin-left:auto;
 }
 #card button:hover,
 #card a.button:hover{

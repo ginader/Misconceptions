@@ -1,7 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-	<p>The Earth’s revolution around the sun causes night and day.</p>
+	<p>The Earth's revolution around the sun causes night and day.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
