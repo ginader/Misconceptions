@@ -1,0 +1,888 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><style type="text/css">@media print {  .gmnoprint {    display:none  }}@media screen {  .gmnoscreen {    display:none  }}</style>
+
+  
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript" src="LunarLibration_files/js.js">
+    </script><script src="LunarLibration_files/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function initialize() {
+	    var myLatlng = new google.maps.LatLng(0, 0);
+	    var northLatlng = new google.maps.LatLng(85,0);
+        var myOptions = {
+          center: myLatlng,
+          zoom: 2,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            myOptions);
+ 
+		
+	    var contentStringN = '<div id="content">'+
+			        '<div id="siteNotice">'+
+			        '</div>'+	
+			        '<h1 id="firstHeading" class="firstHeading">Lunar Libration</h1>'+
+			        '<div id="bodyContent">'+
+				    '<p> The Moon generally has one hemisphere facing the Earth, due to tidal locking. ' +
+					'Libration is manifested as a slow rocking back and forth of the Moon as viewed from Earth,'+
+					' permitting an observer to see slightly different halves of the surface at different times. '+ 
+				    '<p>Attribution: Lunar Libration, <a href="http://en.wikipedia.org/wiki/Libration">'+
+				    'http://en.wikipedia.org/wiki/Libration</a>,</p>'+
+				    '<p><a href="http://sciencenetlinks.com/interactives/moon/moon_challenge/moon_challenge.html"> Try out this moon quiz.</a></p>'+
+				    'This page was last modified on 22 April 2012 at 14:48.'+ 
+					'</div>'+
+				    '</div>';		
+				
+				
+		var moonNorth = 'images/LunarLibration.gif';
+								
+		var infowindowN = new google.maps.InfoWindow({
+			        content: contentStringN
+	    });
+	
+	
+	    var markerN = new google.maps.Marker({
+	        position: northLatlng,
+	        map: map,
+	        icon: moonNorth,
+	        title: 'Lunar Phases'
+	    });
+
+		
+	
+	    google.maps.event.addListener(markerN, 'click', function() {
+	      infowindowN.open(map,markerN);
+	    });
+	 
+	
+
+      }
+    </script>
+  <script src="LunarLibration_files/commonmaputilinfowindowmarker.js" charset="UTF-8" type="text/javascript"></script><script src="LunarLibration_files/onion.js" charset="UTF-8" type="text/javascript"></script><script src="LunarLibration_files/controlsstats.js" charset="UTF-8" type="text/javascript"></script><script src="LunarLibration_files/QuotaService.js" charset="UTF-8" type="text/javascript"></script><script src="LunarLibration_files/ViewportInfoService.js" charset="UTF-8" type="text/javascript"></script><script src="LunarLibration_files/ft.js" charset="UTF-8" type="text/javascript"></script><script src="LunarLibration_files/ft_003.js" charset="UTF-8" type="text/javascript"></script><script src="LunarLibration_files/ViewportInfoService.js" charset="UTF-8" type="text/javascript"></script></head><body
+ onload="initialize()">
+    <div id="map_canvas" style="width: 100%; height: 100%; position: 
+relative; background-color: rgb(229, 227, 223); overflow: hidden;"><div 
+style="position: absolute; left: 0px; top: 0px; overflow: hidden; width:
+ 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 
+0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div
+ style="position: absolute; left: 452px; top: -299px; z-index: 1; 
+cursor: 
+url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), 
+default;"><div style="z-index: 100; position: absolute; left: 0px; top: 
+0px;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div
+ style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div 
+style="width: 256px; height: 256px; position: absolute; left: 704px; 
+top: 263px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 704px; top: 519px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 960px; top: 263px;"></div><div 
+style="width: 256px; height: 256px; position: absolute; left: 960px; 
+top: 519px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 448px; top: 263px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 448px; top: 519px;"></div><div 
+style="width: 256px; height: 256px; position: absolute; left: 704px; 
+top: 7px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 960px; top: 7px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 1216px; top: 263px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: 1216px; 
+top: 519px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 448px; top: 7px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 1216px; top: 7px;"></div><div 
+style="width: 256px; height: 256px; position: absolute; left: 192px; 
+top: 263px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 192px; top: 519px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 1472px; top: 263px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: 1472px; 
+top: 519px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 192px; top: 7px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 1472px; top: 7px;"></div><div 
+style="width: 256px; height: 256px; position: absolute; left: -64px; 
+top: 263px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: -64px; top: 519px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: -64px; top: 7px;"></div><div 
+style="width: 256px; height: 256px; position: absolute; left: 704px; 
+top: 775px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 448px; top: 775px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 960px; top: 775px;"></div><div 
+style="width: 256px; height: 256px; position: absolute; left: 192px; 
+top: 775px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 1216px; top: 775px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: -64px; top: 775px;"></div><div 
+style="width: 256px; height: 256px; position: absolute; left: 1472px; 
+top: 775px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: -320px; top: 7px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: -320px; top: 263px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: -320px; 
+top: 519px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: -320px; top: 775px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 704px; top: 1031px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: 448px; 
+top: 1031px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 960px; top: 1031px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 192px; top: 1031px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: 1216px; 
+top: 1031px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: -64px; top: 1031px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 1472px; top: 1031px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: -320px; 
+top: 1031px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: -576px; top: 263px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: -576px; top: 519px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: -576px; 
+top: 7px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: -576px; top: 775px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: -576px; top: 1031px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: 448px; 
+top: 1287px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 192px; top: 1287px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 704px; top: 1287px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: -64px; 
+top: 1287px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 960px; top: 1287px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: -320px; top: 1287px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: 1216px; 
+top: 1287px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: -576px; top: 1287px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 1472px; top: 1287px;"></div></div></div></div><div
+ style="z-index: 101; position: absolute; left: 0px; top: 0px;"></div><div
+ style="z-index: 102; position: absolute; left: 0px; top: 0px;"><div 
+style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div 
+style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 704px; top: 263px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 704px; top: 
+519px;"></div><div style="width: 256px; height: 256px; overflow: hidden;
+ position: absolute; left: 960px; top: 263px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 960px;
+ top: 519px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: 448px; top: 263px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 448px; top: 519px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 704px; top: 
+7px;"></div><div style="width: 256px; height: 256px; overflow: hidden; 
+position: absolute; left: 960px; top: 7px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 
+1216px; top: 263px;"></div><div style="width: 256px; height: 256px; 
+overflow: hidden; position: absolute; left: 1216px; top: 519px;"></div><div
+ style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 448px; top: 7px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 1216px; top: 
+7px;"></div><div style="width: 256px; height: 256px; overflow: hidden; 
+position: absolute; left: 192px; top: 263px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 192px;
+ top: 519px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: 1472px; top: 263px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 1472px; top: 519px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 192px; top: 
+7px;"></div><div style="width: 256px; height: 256px; overflow: hidden; 
+position: absolute; left: 1472px; top: 7px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: -64px;
+ top: 263px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: -64px; top: 519px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: -64px; top: 7px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 704px; top: 
+775px;"></div><div style="width: 256px; height: 256px; overflow: hidden;
+ position: absolute; left: 448px; top: 775px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 960px;
+ top: 775px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: 192px; top: 775px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 1216px; top: 775px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: -64px; top: 
+775px;"></div><div style="width: 256px; height: 256px; overflow: hidden;
+ position: absolute; left: 1472px; top: 775px;"></div><div style="width:
+ 256px; height: 256px; overflow: hidden; position: absolute; left: 
+-320px; top: 7px;"></div><div style="width: 256px; height: 256px; 
+overflow: hidden; position: absolute; left: -320px; top: 263px;"></div><div
+ style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: -320px; top: 519px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: -320px; top: 
+775px;"></div><div style="width: 256px; height: 256px; overflow: hidden;
+ position: absolute; left: 704px; top: 1031px;"></div><div style="width:
+ 256px; height: 256px; overflow: hidden; position: absolute; left: 
+448px; top: 1031px;"></div><div style="width: 256px; height: 256px; 
+overflow: hidden; position: absolute; left: 960px; top: 1031px;"></div><div
+ style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 192px; top: 1031px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 1216px; top: 
+1031px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: -64px; top: 1031px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 1472px; top: 1031px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: -320px; top: 
+1031px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: -576px; top: 263px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: -576px; top: 519px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: -576px; top: 
+7px;"></div><div style="width: 256px; height: 256px; overflow: hidden; 
+position: absolute; left: -576px; top: 775px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 
+-576px; top: 1031px;"></div><div style="width: 256px; height: 256px; 
+overflow: hidden; position: absolute; left: 448px; top: 1287px;"></div><div
+ style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 192px; top: 1287px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 704px; top: 
+1287px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: -64px; top: 1287px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 960px; top: 1287px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: -320px; top: 
+1287px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: 1216px; top: 1287px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: -576px; top: 1287px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 1472px; top: 
+1287px;"></div></div></div></div><div style="z-index: 103; position: 
+absolute; left: 0px; top: 0px;"><div style="position: absolute; left: 
+0px; top: 0px; z-index: -1;"><div style="position: absolute; left: 0px; 
+top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; 
+overflow: hidden; position: absolute; left: 704px; top: 263px;"></div><div
+ style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 704px; top: 519px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 960px; top: 
+263px;"></div><div style="width: 256px; height: 256px; overflow: hidden;
+ position: absolute; left: 960px; top: 519px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 448px;
+ top: 263px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: 448px; top: 519px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 704px; top: 7px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 960px; top: 
+7px;"></div><div style="width: 256px; height: 256px; overflow: hidden; 
+position: absolute; left: 1216px; top: 263px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 
+1216px; top: 519px;"></div><div style="width: 256px; height: 256px; 
+overflow: hidden; position: absolute; left: 448px; top: 7px;"></div><div
+ style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 1216px; top: 7px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 192px; top: 
+263px;"></div><div style="width: 256px; height: 256px; overflow: hidden;
+ position: absolute; left: 192px; top: 519px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 
+1472px; top: 263px;"></div><div style="width: 256px; height: 256px; 
+overflow: hidden; position: absolute; left: 1472px; top: 519px;"></div><div
+ style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 192px; top: 7px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 1472px; top: 
+7px;"></div><div style="width: 256px; height: 256px; overflow: hidden; 
+position: absolute; left: -64px; top: 263px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: -64px;
+ top: 519px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: -64px; top: 7px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 704px; top: 775px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 448px; top: 
+775px;"></div><div style="width: 256px; height: 256px; overflow: hidden;
+ position: absolute; left: 960px; top: 775px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 192px;
+ top: 775px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: 1216px; top: 775px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: -64px; top: 775px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 1472px; top: 
+775px;"></div><div style="width: 256px; height: 256px; overflow: hidden;
+ position: absolute; left: -320px; top: 7px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 
+-320px; top: 263px;"></div><div style="width: 256px; height: 256px; 
+overflow: hidden; position: absolute; left: -320px; top: 519px;"></div><div
+ style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: -320px; top: 775px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 704px; top: 
+1031px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: 448px; top: 1031px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 960px; top: 1031px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 192px; top: 
+1031px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: 1216px; top: 1031px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: -64px; top: 1031px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 1472px; top: 
+1031px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: -320px; top: 1031px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: -576px; top: 263px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: -576px; top: 
+519px;"></div><div style="width: 256px; height: 256px; overflow: hidden;
+ position: absolute; left: -576px; top: 7px;"></div><div style="width: 
+256px; height: 256px; overflow: hidden; position: absolute; left: 
+-576px; top: 775px;"></div><div style="width: 256px; height: 256px; 
+overflow: hidden; position: absolute; left: -576px; top: 1031px;"></div><div
+ style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 448px; top: 1287px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 192px; top: 
+1287px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: 704px; top: 1287px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: -64px; top: 1287px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: 960px; top: 
+1287px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: -320px; top: 1287px;"></div><div 
+style="width: 256px; height: 256px; overflow: hidden; position: 
+absolute; left: 1216px; top: 1287px;"></div><div style="width: 256px; 
+height: 256px; overflow: hidden; position: absolute; left: -576px; top: 
+1287px;"></div><div style="width: 256px; height: 256px; overflow: 
+hidden; position: absolute; left: 1472px; top: 1287px;"></div></div></div><div
+ style="width: 220px; height: 220px; overflow: hidden; position: 
+absolute; left: 850px; top: -211px; z-index: 9;"><img 
+src="LunarLibration_files/LunarLibration.gif" style="position: absolute;
+ left: 0px; top: 0px; width: auto; height: auto; -moz-user-select: none;
+ border: 0px none; padding: 0px; margin: 0px;"></div></div><div 
+style="z-index: 104; position: absolute; left: 0px; top: 0px;"><div 
+class="gmnoprint" style="position: absolute; left: 667px; top: -359px; 
+z-index: 9;"><div style="width: 70px; height: 30px; overflow: hidden; 
+position: absolute; z-index: 1; -moz-user-select: none; left: 87px; top:
+ 0px;"><img src="LunarLibration_files/iws3.png" style="position: 
+absolute; left: -323px; top: 0px; width: 1144px; height: 370px; 
+-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div
+ style="width: 70px; height: 30px; overflow: hidden; position: absolute;
+ z-index: 1; -moz-user-select: none; left: 757px; top: 0px;"><img 
+src="LunarLibration_files/iws3.png" style="position: absolute; left: 
+-1033px; top: 0px; width: 1144px; height: 370px; -moz-user-select: none;
+ border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+70px; height: 60px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 0px; top: 88px;"><img 
+src="LunarLibration_files/iws3.png" style="position: absolute; left: 
+-14px; top: -310px; width: 1144px; height: 370px; -moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="width: 70px; height: 60px; overflow: hidden; position: absolute; 
+z-index: 1; -moz-user-select: none; left: 700px; top: 88px;"><img 
+src="LunarLibration_files/iws3.png" style="position: absolute; left: 
+-754px; top: -310px; width: 1144px; height: 370px; -moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="width: 140px; height: 60px; overflow: hidden; position: absolute;
+ z-index: 1; -moz-user-select: none; left: 290px; top: 88px;"><img 
+src="LunarLibration_files/iws3.png" style="position: absolute; left: 
+-119px; top: -310px; width: 1144px; height: 370px; -moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="width: 600px; height: 30px; overflow: hidden; position: absolute;
+ z-index: 1; -moz-user-select: none; left: 157px; top: 0px;"><img 
+src="LunarLibration_files/iws3.png" style="position: absolute; left: 
+-393px; top: 0px; width: 1144px; height: 370px; -moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+128px; height: 58px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 29px; top: 30px;"><img 
+src="LunarLibration_files/iws3.png" style="position: absolute; left: 
+-265px; top: -30px; width: auto; height: auto; -moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+128px; height: 58px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 729px; top: 30px;"><img 
+src="LunarLibration_files/iws3.png" style="position: absolute; left: 
+-1005px; top: -30px; width: auto; height: auto; -moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+220px; height: 60px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 70px; top: 88px;"><img 
+src="LunarLibration_files/iws3.png" style="position: absolute; left: 
+-345px; top: -310px; width: 1144px; height: 370px; -moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="width: 270px; height: 60px; overflow: hidden; position: absolute;
+ z-index: 1; -moz-user-select: none; left: 430px; top: 88px;"><img 
+src="LunarLibration_files/iws3.png" style="position: absolute; left: 
+-345px; top: -310px; width: 1144px; height: 370px; -moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="width: 572px; height: 58px; overflow: hidden; position: absolute;
+ z-index: 1; -moz-user-select: none; left: 157px; top: 30px;"><img 
+src="LunarLibration_files/iws3.png" style="position: absolute; left: 
+-360px; top: -30px; width: 1144px; height: 370px; -moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div></div></div><div
+ style="z-index: 105; position: absolute; left: 0px; top: 0px;"><div 
+title="Lunar Phases" class="gmnoprint" style="width: 220px; height: 
+220px; overflow: hidden; position: absolute; left: 850px; top: -211px; 
+z-index: 9; opacity: 0.01; cursor: pointer;"><img 
+src="LunarLibration_files/LunarLibration.gif" style="position: absolute;
+ left: 0px; top: 0px; width: auto; height: auto; -moz-user-select: none;
+ border: 0px none; padding: 0px; margin: 0px;"></div></div><div 
+style="z-index: 106; position: absolute; left: 0px; top: 0px;"><div 
+style="display: none;"><div style="width: 107px; height: 137px; 
+overflow: hidden; position: absolute; left: 21px; top: 26px;"><img 
+src="LunarLibration_files/cb_scout_sprite_api_003.png" style="position: 
+absolute; left: -784px; top: -102px; -moz-user-select: none; border: 0px
+ none; padding: 0px; margin: 0px; width: 1029px; height: 255px;"><div 
+style="position: absolute; left: 7px; top: 5px; width: 94px; height: 
+75px; background-color: rgb(211, 211, 211); z-index: 1;"></div><div 
+style="width: 95px; bottom: 38px; z-index: 1; left: 7px; font-family: 
+Arial,sans-serif; font-size: 9px; color: gray; background-color: white; 
+position: absolute;">Loading...</div><img 
+src="LunarLibration_files/transparent.png" style="position: absolute; 
+left: 7px; top: 5px; width: 94px; height: 75px; -moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px; opacity: 0.25;"></div><div 
+style="width: 21px; height: 26px; overflow: hidden; position: absolute; 
+left: 63px; top: 127px;"><img 
+src="LunarLibration_files/cb_scout_sprite_api_003.png" style="position: 
+absolute; left: -441px; top: -102px; -moz-user-select: none; border: 0px
+ none; padding: 0px; margin: 0px; width: 1029px; height: 255px;"></div></div><div
+ style="position: absolute; left: 658px; top: -485px; cursor: default; 
+z-index: 9;"><div style="width: 48px; height: 8px; overflow: hidden; 
+position: absolute; z-index: 1; -moz-user-select: none; left: 346px; 
+top: 204px;"><img src="LunarLibration_files/iw3.png" style="position: 
+absolute; left: -49px; top: -715px; width: 690px; height: 786px; 
+-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div
+ style="width: 44px; height: 8px; overflow: hidden; position: absolute; 
+z-index: 1; -moz-user-select: none; left: 341px; top: 211px;"><img 
+src="LunarLibration_files/iw3.png" style="position: absolute; left: 
+-44px; top: -722px; width: 690px; height: 786px; -moz-user-select: none;
+ border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+40px; height: 8px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 336px; top: 218px;"><img 
+src="LunarLibration_files/iw3.png" style="position: absolute; left: 
+-39px; top: -729px; width: 690px; height: 786px; -moz-user-select: none;
+ border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+36px; height: 8px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 331px; top: 225px;"><img 
+src="LunarLibration_files/iw3.png" style="position: absolute; left: 
+-34px; top: -736px; width: 690px; height: 786px; -moz-user-select: none;
+ border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+31px; height: 8px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 326px; top: 232px;"><img 
+src="LunarLibration_files/iw3.png" style="position: absolute; left: 
+-29px; top: -743px; width: 690px; height: 786px; -moz-user-select: none;
+ border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+27px; height: 8px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 321px; top: 239px;"><img 
+src="LunarLibration_files/iw3.png" style="position: absolute; left: 
+-24px; top: -750px; width: 690px; height: 786px; -moz-user-select: none;
+ border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+23px; height: 8px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 316px; top: 246px;"><img 
+src="LunarLibration_files/iw3.png" style="position: absolute; left: 
+-19px; top: -757px; width: 690px; height: 786px; -moz-user-select: none;
+ border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+18px; height: 8px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 311px; top: 253px;"><img 
+src="LunarLibration_files/iw3.png" style="position: absolute; left: 
+-14px; top: -764px; width: 690px; height: 786px; -moz-user-select: none;
+ border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+14px; height: 8px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 306px; top: 260px;"><img 
+src="LunarLibration_files/iw3.png" style="position: absolute; left: 
+-9px; top: -771px; width: 690px; height: 786px; -moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+10px; height: 8px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 301px; top: 267px;"><img 
+src="LunarLibration_files/iw3.png" style="position: absolute; left: 
+-4px; top: -778px; width: 690px; height: 786px; -moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 
+97px; height: 25px; overflow: hidden; position: absolute; z-index: 1; 
+-moz-user-select: none; left: 297px; top: 180px;"><img 
+src="LunarLibration_files/iw3.png" style="position: absolute; left: 0px;
+ top: -691px; width: 690px; height: 786px; -moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: 0px; top: 0px; width: 688px; height: 
+203px; overflow: hidden; -moz-user-select: none; background-color: 
+white; border: 1px solid rgb(171, 171, 171);"></div><div style="width: 
+688px; height: 203px;"><div style="width: 10px; height: 10px; overflow: 
+hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; 
+z-index: 10000; cursor: pointer;"><img 
+src="LunarLibration_files/imgs8.png" style="position: absolute; left: 
+-18px; top: -44px; width: 68px; height: 67px; -moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px;"></div><div style="cursor: 
+default; position: absolute; left: 18px; top: 18px; z-index: 2; 
+overflow: auto; width: 654px; height: 169px;"><div style="overflow: 
+auto;"><div id="content"><div id="siteNotice"></div><h1 
+id="firstHeading" class="firstHeading">Lunar Libration</h1><div 
+id="bodyContent"><p> The Moon generally has one hemisphere facing the 
+Earth, due to tidal locking. Libration is manifested as a slow rocking 
+back and forth of the Moon as viewed from Earth, permitting an observer 
+to see slightly different halves of the surface at different times. </p><p>Attribution:
+ Lunar Libration, <a href="http://en.wikipedia.org/wiki/Libration">http://en.wikipedia.org/wiki/Libration</a>,</p><p><a
+ 
+href="http://sciencenetlinks.com/interactives/moon/moon_challenge/moon_challenge.html">
+ Try out this moon quiz.</a></p>This page was last modified on 22 April 
+2012 at 14:48.</div></div></div></div></div></div></div><div 
+style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div 
+style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div 
+style="width: 256px; height: 256px; position: absolute; left: 704px; 
+top: 263px; opacity: 1;"><img src="LunarLibration_files/vt_005.jpg" 
+style="width: 256px; height: 256px; -moz-user-select: none; border: 0px 
+none; padding: 0px; margin: 0px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 704px; top: 519px; opacity: 1;"><img
+ src="LunarLibration_files/vt_013.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 960px; top: 519px; opacity: 1;"><img 
+src="LunarLibration_files/vt_015.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: -64px; top: 519px; opacity: 1;"><img 
+src="LunarLibration_files/vt_015.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 1216px; top: 519px; opacity: 1;"><img 
+src="LunarLibration_files/vt_012.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 192px; top: 519px; opacity: 1;"><img 
+src="LunarLibration_files/vt_012.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 448px; top: 519px; opacity: 1;"><img 
+src="LunarLibration_files/vt_007.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 1472px; top: 519px; opacity: 1;"><img 
+src="LunarLibration_files/vt_007.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 960px; top: 7px; opacity: 1;"><img 
+src="LunarLibration_files/vt_010.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: -64px; top: 7px; opacity: 1;"><img 
+src="LunarLibration_files/vt_010.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 1216px; top: 7px; opacity: 1;"><img 
+src="LunarLibration_files/vt_006.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 192px; top: 7px; opacity: 1;"><img 
+src="LunarLibration_files/vt_006.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 960px; top: 263px; opacity: 1;"><img 
+src="LunarLibration_files/vt_002.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: -64px; top: 263px; opacity: 1;"><img 
+src="LunarLibration_files/vt_002.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 448px; top: 263px; opacity: 1;"><img 
+src="LunarLibration_files/vt_004.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 1472px; top: 263px; opacity: 1;"><img 
+src="LunarLibration_files/vt_004.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 448px; top: 7px; opacity: 1;"><img 
+src="LunarLibration_files/vt_009.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 1472px; top: 7px; opacity: 1;"><img 
+src="LunarLibration_files/vt_009.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 1216px; top: 263px; opacity: 1;"><img 
+src="LunarLibration_files/vt.jpg" style="width: 256px; height: 256px; 
+-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div
+ style="width: 256px; height: 256px; position: absolute; left: 192px; 
+top: 263px; opacity: 1;"><img src="LunarLibration_files/vt.jpg" 
+style="width: 256px; height: 256px; -moz-user-select: none; border: 0px 
+none; padding: 0px; margin: 0px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 704px; top: 7px; opacity: 1;"><img
+ src="LunarLibration_files/vt_008.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 704px; top: 775px;"><img src="LunarLibration_files/vt_014.jpg" 
+style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px; width: 256px; height: 256px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 448px; top: 775px;"><img 
+src="LunarLibration_files/vt_016.jpg" style="-moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 
+256px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: 960px; top: 775px;"><img 
+src="LunarLibration_files/vt_003.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: 192px; top: 775px;"><img src="LunarLibration_files/vt_011.jpg" 
+style="width: 256px; height: 256px; -moz-user-select: none; border: 0px 
+none; padding: 0px; margin: 0px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 1216px; top: 775px;"><img 
+src="LunarLibration_files/vt_011.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: -64px; top: 775px;"><img src="LunarLibration_files/vt_003.jpg" 
+style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px; width: 256px; height: 256px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: 1472px; top: 775px;"><img 
+src="LunarLibration_files/vt_016.jpg" style="-moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 
+256px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: -320px; top: 7px;"><img 
+src="LunarLibration_files/vt_008.jpg" style="-moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 
+256px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: -320px; top: 263px;"><img 
+src="LunarLibration_files/vt_005.jpg" style="-moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 
+256px;"></div><div style="width: 256px; height: 256px; position: 
+absolute; left: -320px; top: 519px;"><img 
+src="LunarLibration_files/vt_013.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: -320px; top: 775px;"><img src="LunarLibration_files/vt_014.jpg" 
+style="width: 256px; height: 256px; -moz-user-select: none; border: 0px 
+none; padding: 0px; margin: 0px;"></div><div style="position: absolute; 
+left: 704px; top: 1031px;"><img 
+src="LunarLibration_files/transparent.png" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="position: absolute; left: 448px; top: 1031px;"><img
+ src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: 960px; top: 1031px;"><img 
+src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: 192px; top: 1031px;"><img 
+src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: 1216px; top: 1031px;"><img 
+src="LunarLibration_files/transparent.png" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="position: absolute; left: -64px; top: 1031px;"><img
+ src="LunarLibration_files/transparent.png" style="width: 256px; height:
+ 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="position: absolute; left: 1472px; top: 1031px;"><img
+ src="LunarLibration_files/transparent.png" style="width: 256px; height:
+ 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="position: absolute; left: -320px; top: 1031px;"><img
+ src="LunarLibration_files/transparent.png" style="width: 256px; height:
+ 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: -576px; top: 263px;"><img src="LunarLibration_files/vt_004.jpg" 
+style="width: 256px; height: 256px; -moz-user-select: none; border: 0px 
+none; padding: 0px; margin: 0px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: -576px; top: 519px;"><img 
+src="LunarLibration_files/vt_007.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="width: 256px; height: 256px; position: absolute;
+ left: -576px; top: 7px;"><img src="LunarLibration_files/vt_009.jpg" 
+style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px; width: 256px; height: 256px;"></div><div style="width: 256px; 
+height: 256px; position: absolute; left: -576px; top: 775px;"><img 
+src="LunarLibration_files/vt_016.jpg" style="width: 256px; height: 
+256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="position: absolute; left: -576px; top: 1031px;"><img
+ src="LunarLibration_files/transparent.png" style="width: 256px; height:
+ 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="position: absolute; left: 448px; top: 1287px;"><img
+ src="LunarLibration_files/transparent.png" style="width: 256px; height:
+ 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 
+0px;"></div><div style="position: absolute; left: 192px; top: 1287px;"><img
+ src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: 704px; top: 1287px;"><img 
+src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: -64px; top: 1287px;"><img 
+src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: 960px; top: 1287px;"><img 
+src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: -320px; top: 1287px;"><img 
+src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: 1216px; top: 1287px;"><img 
+src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: -576px; top: 1287px;"><img 
+src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div><div 
+style="position: absolute; left: 1472px; top: 1287px;"><img 
+src="LunarLibration_files/transparent.png" style="-moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px;"></div></div></div></div></div><div
+ style="margin: 2px 5px 2px 2px; z-index: 1000000; position: absolute; 
+left: 0px; bottom: 0px;"><a 
+href="http://maps.google.com/maps?ll=-71.875621,-158.90625&amp;z=2&amp;t=p&amp;hl=en-US"
+ target="_blank" title="Click to see this area on Google Maps" 
+style="position: static; overflow: visible; float: none; display: 
+inline;"><div style="width: 62px; height: 24px; cursor: pointer;"><img 
+src="LunarLibration_files/google_white.png" style="position: absolute; 
+left: 0px; top: 0px; width: 62px; height: 24px; -moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px;"></div></a></div><div 
+style="z-index: 1000001; position: absolute; right: 0px; bottom: 0px;" 
+class="gmnoprint"><div style="height: 19px; -moz-user-select: none; 
+line-height: 19px; padding-right: 2px; padding-left: 50px; background: 
+-moz-linear-gradient(left center , rgba(255, 255, 255, 0) 0pt, rgba(255,
+ 255, 255, 0.5) 50px) repeat scroll 0% 0% transparent; font-family: 
+Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: 
+nowrap; direction: ltr; text-align: right;"><a style="color: rgb(68, 68,
+ 68); text-decoration: underline; cursor: pointer; display: none;">Map 
+Data</a><span>Map data ©2012 MapLink, Tele Atlas</span><span> - </span><a
+ target="_blank" 
+href="http://www.google.com/intl/en-US_US/help/terms_maps.html" 
+style="color: rgb(68, 68, 68); text-decoration: underline; cursor: 
+pointer;">Terms of Use</a></div></div><div style="background-color: 
+white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); 
+font-family: Arial,sans-serif; color: rgb(34, 34, 34); -moz-box-shadow: 
+0pt 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; 
+width: 256px; height: 148px; position: absolute; left: 810px; top: 
+430px;"><div style="padding: 0pt 0pt 10px; font-size: 16px;">Map Data</div><div
+ style="font-size: 13px;">Map data ©2012 MapLink, Tele Atlas</div><div 
+style="width: 10px; height: 10px; overflow: hidden; position: absolute; 
+opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img
+ src="LunarLibration_files/imgs8.png" style="position: absolute; left: 
+-18px; top: -44px; width: 68px; height: 67px; -moz-user-select: none; 
+border: 0px none; padding: 0px; margin: 0px;"></div></div><div 
+style="position: absolute; right: 0px; bottom: 0px;" class="gmnoscreen"><div
+ style="font-family: Arial,sans-serif; font-size: 10px; color: rgb(68, 
+68, 68); direction: ltr; text-align: right; background-color: rgb(245, 
+245, 245);">Map data ©2012 MapLink, Tele Atlas</div></div><div 
+class="gmnoprint" style="display: none; font-size: 10px; height: 17px; 
+background-color: rgb(245, 245, 245); border: 1px solid rgb(220, 220, 
+220); line-height: 19px; position: absolute; right: 0px; bottom: 0px;"><a
+ 
+href="http://maps.google.com/maps?ll=-71.875621,-158.90625&amp;z=2&amp;t=p&amp;hl=en-US&amp;skstate=action:rmi_dialog$apiref:1$location:-71.875621,-158.90625"
+ style="font-family: Arial,sans-serif; font-size: 85%; font-weight: 
+bold; padding: 1px 3px; color: rgb(68, 68, 68); text-decoration: none; 
+position: relative; bottom: 1px;" title="Report errors in the road map 
+or imagery to Google" target="_new">Report a map error</a></div><div 
+controlheight="308" controlwidth="78" style="margin: 5px; 
+-moz-user-select: none; position: absolute; left: 0px; top: 0px;" 
+class="gmnoprint"><div style="cursor: 
+url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), 
+default; width: 78px; height: 78px; position: absolute; left: 0px; top: 
+0px;" controlheight="80" controlwidth="78" class="gmnoprint"><div 
+style="width: 78px; height: 78px; position: absolute; left: 0px; top: 
+0px;" controlheight="80" controlwidth="78" class="gmnoprint"><div 
+style="visibility: hidden;"><svg viewBox="0 0 78 78" height="78px" 
+width="78px" overflow="hidden" version="1.1" style="position: absolute; 
+left: 0px; top: 0px;"><circle stroke="#f2f4f6" fill="#f2f4f6" 
+fill-opacity="0.2" stroke-width="3" r="35" cy="39" cx="39"></circle><g 
+transform="rotate(0, 39, 39)"><rect fill="#f2f4f6" stroke-width="1" 
+stroke="#a6a6a6" height="11" width="12" ry="4" rx="4" y="0" x="33"></rect><polyline
+ stroke="#000" fill="#f2f4f6" stroke-width="1.5" stroke-linejoin="bevel"
+ points="36.5,8.5 36.5,2.5 41.5,8.5 41.5,2.5"></polyline></g></svg></div></div><div
+ style="position: absolute; left: 10px; top: 11px;" controlheight="59" 
+controlwidth="59" class="gmnoprint"><div style="width: 59px; height: 
+59px; overflow: hidden; position: relative;"><img 
+src="LunarLibration_files/mapcontrols3d7.png" style="position: absolute;
+ left: 0px; top: 0px; -moz-user-select: none; border: 0px none; padding:
+ 0px; margin: 0px; width: 59px; height: 492px;"><div title="Pan left" 
+style="position: absolute; left: 0px; top: 20px; width: 19.6667px; 
+height: 19.6667px; cursor: pointer;"></div><div title="Pan right" 
+style="position: absolute; left: 39px; top: 20px; width: 19.6667px; 
+height: 19.6667px; cursor: pointer;"></div><div title="Pan up" 
+style="position: absolute; left: 20px; top: 0px; width: 19.6667px; 
+height: 19.6667px; cursor: pointer;"></div><div title="Pan down" 
+style="position: absolute; left: 20px; top: 39px; width: 19.6667px; 
+height: 19.6667px; cursor: pointer;"></div></div></div></div><div 
+controlheight="40" controlwidth="32" style="cursor: 
+url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), 
+default; position: absolute; left: 23px; top: 85px;"><div style="width: 
+32px; height: 40px; overflow: hidden; position: absolute; left: 0px; 
+top: 0px;"><img src="LunarLibration_files/cb_scout_sprite_api_003.png" 
+style="position: absolute; left: -9px; top: -102px; -moz-user-select: 
+none; border: 0px none; padding: 0px; margin: 0px; width: 1029px; 
+height: 255px;"></div><div style="width: 32px; height: 40px; overflow: 
+hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img
+ src="LunarLibration_files/cb_scout_sprite_api_003.png" style="position:
+ absolute; left: -107px; top: -102px; -moz-user-select: none; border: 
+0px none; padding: 0px; margin: 0px; width: 1029px; height: 255px;"></div><div
+ style="width: 32px; height: 40px; overflow: hidden; position: absolute;
+ left: 0px; top: 0px; visibility: hidden;"><img 
+src="LunarLibration_files/cb_scout_sprite_api_003.png" style="position: 
+absolute; left: -58px; top: -102px; -moz-user-select: none; border: 0px 
+none; padding: 0px; margin: 0px; width: 1029px; height: 255px;"></div><div
+ style="width: 32px; height: 40px; overflow: hidden; position: absolute;
+ left: 0px; top: 0px; visibility: hidden;"><img 
+src="LunarLibration_files/cb_scout_sprite_api_003.png" style="position: 
+absolute; left: -205px; top: -102px; -moz-user-select: none; border: 0px
+ none; padding: 0px; margin: 0px; width: 1029px; height: 255px;"></div></div><div
+ controlheight="0" controlwidth="0" style="opacity: 0.6; display: none; 
+position: absolute;" class="gmnoprint"><img title="Rotate map 90 
+degrees" style="-moz-user-select: none; border: 0px none; padding: 0px; 
+margin: 0px; cursor: pointer; width: 22px; height: 22px;" 
+src="LunarLibration_files/rotate2.png"></div><div controlheight="178" 
+controlwidth="25" style="position: absolute; left: 27px; top: 130px;" 
+class="gmnoprint"><div title="Zoom in" style="width: 23px; height: 24px;
+ overflow: hidden; position: relative; cursor: pointer; z-index: 1;"><img
+ src="LunarLibration_files/mapcontrols3d7.png" style="position: 
+absolute; left: -17px; top: -400px; -moz-user-select: none; border: 0px 
+none; padding: 0px; margin: 0px; width: 59px; height: 492px;"></div><div
+ title="Click to zoom" style="width: 25px; height: 130px; overflow: 
+hidden; position: relative; cursor: pointer; top: -4px;"><img 
+src="LunarLibration_files/mapcontrols3d7.png" style="position: absolute;
+ left: -17px; top: -87px; -moz-user-select: none; border: 0px none; 
+padding: 0px; margin: 0px; width: 59px; height: 492px;"></div><div 
+title="Drag to zoom" style="width: 21px; height: 14px; overflow: hidden;
+ position: absolute; z-index: 2; cursor: 
+url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), 
+default; left: 2px; top: 124px;"><img 
+src="LunarLibration_files/mapcontrols3d7.png" style="position: absolute;
+ left: 0px; top: -384px; -moz-user-select: none; border: 0px none; 
+padding: 0px; margin: 0px; width: 59px; height: 492px;"></div><div 
+title="Zoom out" style="width: 23px; height: 23px; overflow: hidden; 
+position: relative; cursor: pointer; top: -4px; z-index: 3;"><img 
+src="LunarLibration_files/mapcontrols3d7.png" style="position: absolute;
+ left: -17px; top: -361px; -moz-user-select: none; border: 0px none; 
+padding: 0px; margin: 0px; width: 59px; height: 492px;"></div></div></div><div
+ style="margin: 5px; z-index: 0; position: absolute; cursor: pointer; 
+right: 0px; top: 0px;" class="gmnoprint"><div style="float: left;"><div 
+title="Show street map" style="direction: ltr; overflow: hidden; 
+text-align: center; position: relative; color: rgb(0, 0, 0); 
+font-family: Arial,sans-serif; -moz-user-select: none; font-size: 13px; 
+background: none repeat scroll 0% 0% rgb(255, 255, 255); padding: 1px 
+6px; border: 1px solid rgb(113, 123, 135); -moz-box-shadow: 0pt 2px 4px 
+rgba(0, 0, 0, 0.4); font-weight: bold; min-width: 28px;">Map</div><div 
+style="background-color: white; z-index: -1; padding-top: 2px; 
+border-width: 0pt 1px 1px; border-style: none solid solid; border-color:
+ -moz-use-text-color rgb(113, 123, 135) rgb(113, 123, 135); 
+-moz-box-shadow: 0pt 2px 4px rgba(0, 0, 0, 0.4); position: absolute; 
+left: 0px; top: 19px; text-align: left; display: none;"><div title="Show
+ street map with terrain" style="color: rgb(0, 0, 0); font-family: 
+Arial,sans-serif; -moz-user-select: none; font-size: 11px; 
+background-color: rgb(255, 255, 255); padding: 1px 8px 3px 5px; 
+direction: ltr; text-align: left; white-space: nowrap;"><span 
+style="position: relative; line-height: 0pt; font-size: 0pt; margin: 0pt
+ 5px 0pt 0pt; display: inline-block; background-color: rgb(255, 255, 
+255); border: 1px solid rgb(198, 198, 198); -moz-border-radius: 1px 1px 
+1px 1px; width: 13px; height: 13px; -moz-box-shadow: none; 
+vertical-align: middle;" role="checkbox"><div style="position: absolute;
+ left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img
+ src="LunarLibration_files/imgs8.png" style="position: absolute; left: 
+-52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 
+0px; margin: 0px; width: 68px; height: 67px;"></div></span><label 
+style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div
+ style="float: left;"><div title="Show satellite imagery" 
+style="direction: ltr; overflow: hidden; text-align: center; position: 
+relative; color: rgb(51, 51, 51); font-family: Arial,sans-serif; 
+-moz-user-select: none; font-size: 13px; background: none repeat scroll 
+0% 0% rgb(255, 255, 255); padding: 1px 6px; border-width: 1px 1px 1px 
+0pt; border-style: solid solid solid none; border-color: rgb(113, 123, 
+135) rgb(113, 123, 135) rgb(113, 123, 135) -moz-use-text-color; 
+-moz-box-shadow: 0pt 2px 4px rgba(0, 0, 0, 0.4); font-weight: normal; 
+min-width: 51px;">Satellite</div><div style="background-color: white; 
+z-index: -1; padding-top: 2px; border-width: 0pt 1px 1px; border-style: 
+none solid solid; border-color: -moz-use-text-color rgb(113, 123, 135) 
+rgb(113, 123, 135); -moz-box-shadow: 0pt 2px 4px rgba(0, 0, 0, 0.4); 
+position: absolute; right: 0px; top: 19px; text-align: left; display: 
+none;"><div title="Zoom in to show 45 degree view" style="color: 
+rgb(184, 184, 184); font-family: Arial,sans-serif; -moz-user-select: 
+none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 
+1px 8px 3px 5px; direction: ltr; text-align: left; white-space: nowrap; 
+display: none;"><span style="position: relative; line-height: 0pt; 
+font-size: 0pt; margin: 0pt 5px 0pt 0pt; display: inline-block; 
+background-color: rgb(255, 255, 255); border: 1px solid rgb(241, 241, 
+241); -moz-border-radius: 1px 1px 1px 1px; width: 13px; height: 13px; 
+-moz-box-shadow: none; vertical-align: middle;" role="checkbox"><div 
+style="position: absolute; left: 1px; top: -2px; width: 13px; height: 
+11px; overflow: hidden; display: none;"><img 
+src="LunarLibration_files/imgs8.png" style="position: absolute; left: 
+-52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 
+0px; margin: 0px; width: 68px; height: 67px;"></div></span><label 
+style="vertical-align: middle; cursor: pointer;">45°</label></div><div 
+title="Show imagery with street names" style="color: rgb(0, 0, 0); 
+font-family: Arial,sans-serif; -moz-user-select: none; font-size: 11px; 
+background-color: rgb(255, 255, 255); padding: 1px 8px 3px 5px; 
+direction: ltr; text-align: left; white-space: nowrap;"><span 
+style="position: relative; line-height: 0pt; font-size: 0pt; margin: 0pt
+ 5px 0pt 0pt; display: inline-block; background-color: rgb(255, 255, 
+255); border: 1px solid rgb(198, 198, 198); -moz-border-radius: 1px 1px 
+1px 1px; width: 13px; height: 13px; -moz-box-shadow: none; 
+vertical-align: middle;" role="checkbox"><div style="position: absolute;
+ left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img
+ src="LunarLibration_files/imgs8.png" style="position: absolute; left: 
+-52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 
+0px; margin: 0px; width: 68px; height: 67px;"></div></span><label 
+style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div>
+  </body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHJLyabbyIQ2C8nzI2xJl4E8KqLu3oUYU&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+	    var myLatlng = new google.maps.LatLng(0, 0);
+	    var northLatlng = new google.maps.LatLng(85,0);
+        var myOptions = {
+          center: myLatlng,
+          zoom: 2,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            myOptions);
+ 
+		
+	    var contentStringN = '<div id="content">'+
+			        '<div id="siteNotice">'+
+			        '</div>'+	
+			        '<h1 id="firstHeading" class="firstHeading">Lunar Libration</h1>'+
+			        '<div id="bodyContent">'+
+				    '<p> The Moon generally has one hemisphere facing the Earth, due to tidal locking. ' +
+					'Libration is manifested as a slow rocking back and forth of the Moon as viewed from Earth,'+
+					' permitting an observer to see slightly different halves of the surface at different times. '+ 
+				    '<p>Attribution: Lunar Libration, <a href="http://en.wikipedia.org/wiki/Libration">'+
+				    'http://en.wikipedia.org/wiki/Libration</a>,</p>'+
+				    '<p><a href="http://sciencenetlinks.com/interactives/moon/moon_challenge/moon_challenge.html"> Try out this moon quiz.</a></p>'+
+				    'This page was last modified on 22 April 2012 at 14:48.'+ 
+					'</div>'+
+				    '</div>';		
+				
+				
+		var moonNorth = 'images/LunarLibration.gif';
+								
+		var infowindowN = new google.maps.InfoWindow({
+			        content: contentStringN
+	    });
+	
+	
+	    var markerN = new google.maps.Marker({
+	        position: northLatlng,
+	        map: map,
+	        icon: moonNorth,
+	        title: 'Lunar Phases'
+	    });
+
+		
+	
+	    google.maps.event.addListener(markerN, 'click', function() {
+	      infowindowN.open(map,markerN);
+	    });
+	 
+	
+
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+  </body>
+</html>
+  
