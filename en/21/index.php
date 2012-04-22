@@ -1,8 +1,8 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-	<p>Different countries see different phases of the Moon on the same day..</p>
-			<img src="/assets/img/img-moon.png" alt="The Moon at night.">	
+	<img src="/assets/img/img-moon.png" alt="The Moon at night.">
+	<p>Different countries see different phases of the Moon on the same day..</p>	
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
