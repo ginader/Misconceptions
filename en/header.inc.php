@@ -1,3 +1,12 @@
+<?php 
+//print_r($_SERVER);
+//include ('../helper.inc.php');
+include ('strings.inc.php');
+$url = array_pop(array_filter(explode('/',$_SERVER['REQUEST_URI'])));
+
+//print_r($url);
+//$link_to_next = 
+?>
 <!doctype html>
 <html>
 <head>
