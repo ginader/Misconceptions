@@ -23,16 +23,16 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 		<div class="face">
 			<h2>About Daily Myths</h2>
 				
-			<p>This project was built in 24 hours during the INTERNATIONAL SPACE APPS CHALLENGE on 21-22 APRIL 2012. </p><p>The idea for it came out of the Challenge called: <a target="_blank" href="http://spaceappschallenge.org/challenge/visualize-all-too-common-astronomysolar-system-mis/">Visualize the "All-too-Common Astronomy/Solar System Misconceptions</a></p>
-			
-			<p>This Trivia is our approach to make people learn while having fun and to make those Misconceptions go away.</p>
+			<p>This project was built in 24 hours during the <a target="_blank" href="http://spaceappschallenge.org/">International Space Apps Challenge</a> on 21-22 April 2012.The San Francisco location was at <a target="_blank" href="http://techshop.ws/">TechShop.</a.> </p>
+			<p>The idea for it came out of the Challenge called: <a target="_blank" href="http://spaceappschallenge.org/challenge/visualize-all-too-common-astronomysolar-system-mis/">Visualize the "All-too-Common Astronomy/Solar System Misconceptions</a> We thought the title was really long so we decided to rebrand it: Daily Myths.This Trivia is our approach to make people learn while having fun and to make those Misconceptions go away.</p>
 
-			<h3>The Team</h3>
+			<h2>The Team</h2>
 
 			<ul id="team">
-				<li><a target="_blank" href="http://twitter.com/cindyli"><img src="/assets/img/cindyli.jpg" alt=""> Cindy Li</a> <p>[design]</li>
-				<li><a target="_blank" href="http://twitter.com/ginader"><img src="/assets/img/ginader.png" alt=""> Dirk Ginader</a> [developer]</li>
-				<li><a target="_blank" href="http://twitter.com/amitmrao"><img src="/assets/img/amirao.jpg" alt=""> Amit Rao</a> [developer (moon phases)]</li>
+				<li><a target="_blank" href="http://twitter.com/cindyli"><img src="/assets/img/cindyli.jpg" alt="avatar of Cindy Li">Cindy Li</a> [design] <p></li>
+				<li><a target="_blank" href="http://twitter.com/ginader"><img src="/assets/img/ginader.png" alt="avatar of Dirk Ginader">Dirk Ginader</a> [developer]<p></li>
+				<li><a target="_blank" href="http://twitter.com/amitmrao"><img src="/assets/img/amirao.jpg" alt="avatar of Amit Rao">Amit Rao</a> [developer (moon phases)]<p></li>
+				<li><a target="_blank" href="http://twitter.com/kurzkeks"><img src="/assets/img/cotta.jpg" alt="avatar of Cotta Ginader">Cotta Ginader</a> [Researcher]<p></li>
 			</ul><!-- /team -->
 
 
