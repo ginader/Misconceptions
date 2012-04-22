@@ -47,7 +47,7 @@ h1{
 
 .container {
   width: 400px;
-  min-height: 500px;
+  min-height: 550px;
   position: relative;
   margin: 0 auto 40px;
   -webkit-perspective: 800px;
@@ -203,6 +203,7 @@ ul#languages li a:focus{
 
 #about .face{
   width:500px;
+  min-height:550px;
 }
 
 h1 a{
