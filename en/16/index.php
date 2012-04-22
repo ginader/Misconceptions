@@ -2,6 +2,7 @@
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
 	<p>The Moon moves around the Earth in more than a day.</p>
+		<img src="/assets/img/img-moon.png" alt="A closeup of the Earth's moon">
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
@@ -9,6 +10,7 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
+	<img src="/assets/img/img-moon-2.png" alt="A moon behind the Lincoln Memorial in Washington, DC.">
 	<p>
 		<strong class="no">Wrong.</strong>
 		<strong class="yes">Correct!</strong> 

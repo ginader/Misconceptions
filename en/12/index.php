@@ -2,6 +2,7 @@
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
 	<p>The Earth is round like a pancake.</p>
+	<img src="/assets/img/img-earth-01.png" alt="Earth in space.">
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
@@ -9,6 +10,7 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
+	<img src="/assets/img/img-earth-2.png" alt="Earth in space.">
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 
