@@ -12,7 +12,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 		<li id="language-nav" class="open_">
 			<a href="/language">change language</a>
 			<ul id="languages">
-				<li><a href="/de/about">deutsch</a></li>
+				<li><a href="/en/about">english</a></li>
 			</ul>
 		</li>
 	</ul>	
