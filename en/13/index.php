@@ -1,7 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-		<img src="/assets/img/img-planets.png" alt="The solar system.">
+		<img src="/assets/img/img-planets-2.png" alt="The solar system.">
 	<p>The Earth is the center of the solar system. The planets, Sun and Moon revolve around the Earth.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
