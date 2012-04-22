@@ -46,8 +46,8 @@ h1{
 }
 
 .container {
-  width: 300px;
-  min-height: 350px;
+  width: 400px;
+  min-height: 450px;
   position: relative;
   margin: 0 auto 40px;
   -webkit-perspective: 800px;

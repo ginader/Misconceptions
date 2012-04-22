@@ -1,40 +1,78 @@
 .galaxy{
-	perspective: 500px;
+  	display: none;
+	-webkit-perspective: 400px;
+	-moz-perspective: 400px;
+	-o-perspective: 400px;
+	-ms-perspective: 400px;
+	perspective: 400px;
+	-webkit-perspective-origin: 50% 50%;
+	-moz-perspective-origin: 50% 50%;
+	-o-perspective-origin: 50% 50%;
+	-ms-perspective-origin: 50% 50%;
 	perspective-origin: 50% 50%;
-	margin-top:-20%;
+	margin-top:-40%;
+	margin-bottom:-20%;
 }
 .system{
+	-webkit-transform: rotateX( 50deg );
+	-moz-transform: rotateX( 50deg );
+	-o-transform: rotateX( 50deg );
+	-ms-transform: rotateX( 50deg );
 	transform: rotateX( 50deg );
-	border:1px solid black;
+	/*border:1px solid black;*/
 }
 .system{
 	margin:auto;
-	padding:auto;
+	padding:0;
 	position:relative;
-	height:800px;
-	width:800px;
+	height:400px;
+	width:400px;
 }
 .system li{
 	position: absolute;
 	left:50%;
 	top:50%;
 	display: block;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	-ms-animation-iteration-count:infinite;
+	-o-animation-iteration-count:infinite;
 	animation-iteration-count:infinite;
-    animation-timing-function:linear;
-    animation-name:orbit;
-    animation-duration:5s;
+	-webkit-animation-timing-function:linear;
+	-moz-animation-timing-function:linear;
+	-ms-animation-timing-function:linear;
+	-o-animation-timing-function:linear;
+	animation-timing-function:linear;
+	-webkit-animation-name:orbit;
+	-moz-animation-name:orbit;
+	-ms-animation-name:orbit;
+	-o-animation-name:orbit;
+	animation-name:orbit;
+	animation-duration:5s;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
 	border-radius:50%;
 	border:1px solid gray;
 }
-.system:hover li{
+/*.system:hover li{
 	background: rgba(0, 0, 0, .1);
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-ms-animation-play-state: paused;
+	-o-animation-play-state: paused;
 	animation-play-state: paused;
+	-webkit-transform: rotateX( -80deg );
+	-moz-transform: rotateX( -80deg );
+	-o-transform: rotateX( -80deg );
+	-ms-transform: rotateX( -80deg );
 	transform: rotateX( -80deg );
-}
+}*/
 .system li i{
 	position: absolute;
 	top:66%;
 	background-color: #DDD;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
 	border-radius:50%;
 	width:40px;
 	height:40px;
@@ -42,9 +80,9 @@
 	vertical-align: middle;
 	line-height:50px;
 }
-.system:hover i{
+/*.system:hover i{
 	background: rgba(255, 0, 0, 1);
-}
+}*/
 
 .system .sun{
 	width:2%;
@@ -59,6 +97,10 @@
 	height:10%;
 	margin-left:-5%;
 	margin-top:-5%;
+	-webkit-animation-duration:5s;
+	-moz-animation-duration:5s;
+	-o-animation-duration:50s;
+	-ms-animation-duration:5s;
 	animation-duration:5s;
 }
 .system .venus{
@@ -66,6 +108,10 @@
 	height:16%;
 	margin-left:-8%;
 	margin-top:-8%;
+	-webkit-animation-duration:8s;
+	-moz-animation-duration:8s;
+	-o-animation-duration:8s;
+	-ms-animation-duration:8s;
 	animation-duration:8s;
 }
 .system .earth{
@@ -73,6 +119,10 @@
 	height:22%;
 	margin-left:-11%;
 	margin-top:-11%;
+	-webkit-animation-duration:12s;
+	-moz-animation-duration:12s;
+	-o-animation-duration:12s;
+	-ms-animation-duration:12s;
 	animation-duration:12s;
 }
 .system .earth i{
@@ -83,6 +133,10 @@
 	height:28%;
 	margin-left:-14%;
 	margin-top:-14%;
+	-webkit-animation-duration:20s;
+	-moz-animation-duration:20s;
+	-o-animation-duration:20s;
+	-ms-animation-duration:20s;
 	animation-duration:20s;
 }
 .system .jupiter{
@@ -90,6 +144,10 @@
 	height:34%;
 	margin-left:-17%;
 	margin-top:-17%;
+	-webkit-animation-duration:30s;
+	-moz-animation-duration:30s;
+	-o-animation-duration:30s;
+	-ms-animation-duration:30s;
 	animation-duration:30s;
 }
 .system .saturn{
@@ -97,6 +155,10 @@
 	height:40%;
 	margin-left:-20%;
 	margin-top:-20%;
+	-webkit-animation-duration:60s;
+	-moz-animation-duration:60s;
+	-o-animation-duration:60s;
+	-ms-animation-duration:60s;
 	animation-duration:60s;
 }
 .system .uranus{
@@ -104,6 +166,10 @@
 	height:46%;
 	margin-left:-23%;
 	margin-top:-23%;
+	-webkit-animation-duration:70s;
+	-moz-animation-duration:70s;
+	-o-animation-duration:70s;
+	-ms-animation-duration:70s;
 	animation-duration:70s;
 }
 .system .neptune{
@@ -111,12 +177,78 @@
 	height:56%;
 	margin-left:-28%;
 	margin-top:-28%;
+	-webkit-animation-duration:100s;
+	-moz-animation-duration:100s;
+	-o-animation-duration:100s;
+	-ms-animation-duration:100s;
 	animation-duration:100s;
 }
 
-@keyframes orbit { 
-	from { transform:rotate(0deg) } 
-	to { transform:rotate(360deg) } 
+@keyframes "orbit" {
+ from {
+    -webkit-transform: rotate(0deg);
+   	-moz-transform: rotate(0deg);
+   	-o-transform: rotate(0deg);
+   	-ms-transform: rotate(0deg);
+   	transform: rotate(0deg);
+ }
+ to {
+    -webkit-transform: rotate(360deg);
+   	-moz-transform: rotate(360deg);
+   	-o-transform: rotate(360deg);
+   	-ms-transform: rotate(360deg);
+   	transform: rotate(360deg);
+ }
+
 }
+
+@-moz-keyframes orbit {
+ from {
+   -moz-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -moz-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+
+}
+
+@-webkit-keyframes "orbit" {
+ from {
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+
+}
+
+@-ms-keyframes "orbit" {
+ from {
+   -ms-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -ms-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+
+}
+
+@-o-keyframes "orbit" {
+ from {
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+
+}
+
 
 
