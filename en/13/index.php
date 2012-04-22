@@ -1,6 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
+		<img src="/assets/img/img-planets.png" alt="The solar system.">
 	<p>The Earth is the center of the solar system. The planets, Sun and Moon revolve around the Earth.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
@@ -9,6 +10,7 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
+			<img src="/assets/img/img-sun.png" alt="A closeup of the Sun.">
 	<?php include ($_SERVER['DOCUMENT_ROOT'].'/solar-system-anim.inc.php'); ?>
 	<p>
 		<strong class="yes">Wrong.</strong>

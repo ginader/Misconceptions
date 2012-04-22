@@ -70,7 +70,7 @@
 .system li i{
 	position: absolute;
 	top:66%;
-	background-color: #DDD;
+	/*background-color: #DDD;*/
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
 	border-radius:50%;
