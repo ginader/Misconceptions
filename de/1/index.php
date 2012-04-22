@@ -14,7 +14,7 @@
 	<p>
 		<strong class="no">Richtig!</strong>
 		<strong class="yes">Falsch.</strong> 
-Astronomen messen die Größe von Sternen nach dem Radius der Sonne. Zum Beispiel hat Alpha Centauri A einen Radius von 1.05 Solar Radii. Die Größe von Sternen reicht von Neutronen Sternen mit einem Radius von nur 20km (12 Meilen) bis hin zu Supergiganten mit einem Durchmesser 1.000 mal größer als dem unserer Sonne.
+Astronomen messen die Gr&ouml;&szlig;e von Sternen nach dem Radius der Sonne. Zum Beispiel hat Alpha Centauri A einen Radius von 1.05 Solar Radii. Die Gr&ouml;&szlig;e von Sternen reicht von Neutronen Sternen mit einem Radius von nur 20km (12 Meilen) bis hin zu Supergiganten mit einem Durchmesser 1.000 mal gr&ouml;&szlig;er als dem unserer Sonne.
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.space.com/57-stars-formation-classification-and-constellations.html" id="more">Mehr davon!</a>

@@ -3,6 +3,6 @@ $question = 'Wahrheit oder Mythos?';
 $answer = 'Antwort';
 $yes = 'Ja. Du sprichst die Wahrheit';
 $no = 'Nein. Das ist ein Mythos';
-$next = 'Nächste Frage';
+$next = 'N&auml;chste Frage';
 
 ?>
