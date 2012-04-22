@@ -12,8 +12,8 @@
 	<h2><?php echo $answer ?></h2>
 		<img src="/assets/img/img-night-2.png" alt="View from space of Europe's lights.">
 	<p>
-		<strong class="yes">Wrong.</strong>
-		<strong class="no">Correct!</strong> 
+		<strong class="yes">Falsch.</strong>
+		<strong class="no">Richtig!</strong> 
 		You can see light because light is reflected of particles.
 	</p>
 	<div class="cta">

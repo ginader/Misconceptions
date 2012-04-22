@@ -12,8 +12,8 @@
 	<h2><?php echo $answer ?></h2>
 	<img src="/assets/img/img-moon-2.png" alt="A moon behind the Lincoln Memorial in Washington, DC.">
 	<p>
-		<strong class="no">Wrong.</strong>
-		<strong class="yes">Correct!</strong> 
+		<strong class="no">Falsch.</strong>
+		<strong class="yes">Richtig!</strong> 
 		The Moon moves around the Earth in an approximately circular orbit, going once around us in approximately 27.3 days, or one sidereal period of revolution. As it does so, its position changes, relative to the stars. 
 	</p>
 	<div class="cta">

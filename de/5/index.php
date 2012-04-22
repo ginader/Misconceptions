@@ -1,7 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-	<p>Meteors are falling stars.</p>
+	<p>Meteore sind fallende Sterne</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
@@ -10,12 +10,12 @@
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<p>
-		<strong class="yes">Wrong.</strong>
-		<strong class="no">Correct!</strong> 
-Even though they are commonly called "shooting star" or "falling star" a meteor is not a star, but the the visible path of a meteoroid that enters Earth's (or another body's) atmosphere. A meteoroid is a sand- to boulder-sized particle of debris in the Solar System.  If a meteoroid reaches the ground and survives impact, then it is called a meteorite. 
+		<strong class="yes">Falsch.</strong>
+		<strong class="no">Richtig!</strong> 
+Auch wenn Meteore Sternschnuppen oder fallende Sterne genannt werden, so sind sie dennoch keine Sterne. Meteore sind vielmehr der sichtbare helle Lichtstreifen am Himmel, der durch den Eintritt eines Meteoroiden in die Erdatmosphäre hervorgerufen wird. Meteoroiden sind Objekte, die innerhalb des Sonnensystems um die Sonne kreisen und kleiner als Asteroiden sind. Dringt ein solcher Meteoroid in die Erdatmosphäre ein, so wird er zu einem Meteor. Durch das Eintreten in die dichte Erdatmosphäre wird die Luft um den Meteor herum ionisiert und wir können den daraus entstehenden Leuchtschweif auf der Erde als Sternschnuppe sehen. Trifft der Meteor auf der Erdoberfläche auf, so wird er Meteorit genannt.
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://www.space.com/57-stars-formation-classification-and-constellations.html" id="more">I want to learn more about the stars!</a>
+		<a target="_blank" class="button" href="http://en.wikipedia.org/wiki/Meteoroid" id="more">Mehr davon!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>

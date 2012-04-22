@@ -10,8 +10,8 @@
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<p>
-		<strong class="no">Wrong.</strong>
-		<strong class="yes">Correct!</strong> 
+		<strong class="no">Falsch.</strong>
+		<strong class="yes">Richtig!</strong> 
 The Sun's visible surface shows a variety of features. Most conspicuous are the sunspots, great dark disturbances which can be many times larger than the earth. Observations of sunspots from day to day show that the Sun rotates. 
 	</p>
 	<div class="cta">

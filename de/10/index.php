@@ -13,8 +13,8 @@
 	<h2><?php echo $answer ?></h2>
 	<img src="/assets/img/img-earth-sun.png" alt="the sun is larger than the earth!">
 	<p>
-		<strong class="yes">Wrong.</strong>
-		<strong class="no">Correct!</strong> 
+		<strong class="yes">Falsch.</strong>
+		<strong class="no">Richtig!</strong> 
 		The Sun is WAY bigger than the Earth. In fact the sun is 109 times bigger than the Earth, which means you'd have to line up 109 Earth's end-to-end to stretch across the face of the sun.
 	</p>
 	<div class="cta">

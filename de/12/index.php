@@ -12,8 +12,8 @@
 	<h2><?php echo $answer ?></h2>
 	<img src="/assets/img/img-earth-2.png" alt="Earth in space.">
 	<p>
-		<strong class="yes">Wrong.</strong>
-		<strong class="no">Correct!</strong> 
+		<strong class="yes">Falsch.</strong>
+		<strong class="no">Richtig!</strong> 
 The Earth is neither flat like a pancake nor perfectly round like a marble. The actual shape of the Earth is actually an oblate spheroid, a sphere with a bulge around the equator. 
 	</p>
 	<div class="cta">

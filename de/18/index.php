@@ -10,8 +10,8 @@
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<p>
-		<strong class="yes">Wrong.</strong>
-		<strong class="no">Correct!</strong> 
+		<strong class="yes">Falsch.</strong>
+		<strong class="no">Richtig!</strong> 
 		The Earth rotates on an axis, making one full rotation every 24 
 		hours. Different sides of the Earth are exposed to the sun during the 
 		course of these 24 hours, with half of the planet being exposed to sun 

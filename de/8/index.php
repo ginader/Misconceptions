@@ -10,8 +10,8 @@
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<p>
-		<strong class="no">Wrong.</strong>
-		<strong class="yes">Correct!</strong> 
+		<strong class="no">Falsch.</strong>
+		<strong class="yes">Richtig!</strong> 
 As the earth spins on its axis, producing night and day, it also moves about the sun in an elliptical (elongated circle) orbit that requires about 365 1/4 days to complete. The earth's spin axis is tilted with respect to its orbital plane. This is what causes the seasons. When the Earth's axis points towards the Sun, it is summer for that hemisphere. When the Earth's axis points away, winter can be expected.
 	</p>
 	<div class="cta">

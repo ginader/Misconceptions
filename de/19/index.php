@@ -10,8 +10,8 @@
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<p>
-		<strong class="yes">Wrong.</strong>
-		<strong class="no">Correct!</strong> 
+		<strong class="yes">Falsch.</strong>
+		<strong class="no">Richtig!</strong> 
 		For continental U.S. the answer is never. Since the Earth's rotation axis is tilted 23.5 degrees with respect to its orbital motion around the Sun, one would have to be less than 23.5 degrees above or below the equator to have the Sun pass directly overhead (once per year).
 	</p>
 	<div class="cta">

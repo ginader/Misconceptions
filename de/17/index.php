@@ -10,8 +10,8 @@
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<p>
-		<strong class="no">Wrong.</strong>
-		<strong class="yes">Correct!</strong> 
+		<strong class="no">Falsch.</strong>
+		<strong class="yes">Richtig!</strong> 
 The Moon's phases depends on two things: the Moon is round, and the angle it makes with the Earth and Sun changes over its orbit
 	</p>
 	<div class="cta">

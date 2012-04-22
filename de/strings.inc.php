@@ -1,8 +1,8 @@
 <?php
-$question = 'Truth or Myth?';
-$answer = 'Answer';
-$yes = 'Yes! You speak the truth.';
-$no = 'No. This is a Myth.';
-$next = 'Next Trivia Question';
+$question = 'Wahrheit oder Mythos?';
+$answer = 'Antwort';
+$yes = 'Ja. Du sprichst die Wahrheit';
+$no = 'Nein. Das ist ein Mythos';
+$next = 'Nächste Frage';
 
 ?>

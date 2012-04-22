@@ -13,8 +13,8 @@
 	<!-- <img src="/assets/img/img-sun.png" alt="A closeup of the Sun."> -->
 	<?php include ($_SERVER['DOCUMENT_ROOT'].'/solar-system-anim.inc.php'); ?>
 	<p>
-		<strong class="yes">Wrong.</strong>
-		<strong class="no">Correct!</strong> 
+		<strong class="yes">Falsch.</strong>
+		<strong class="no">Richtig!</strong> 
 		The Sun is at the center of the solar system, and the planets (Earth is one of them), asteroids, moons, and comets orbit the Sun. The Earth is the third planet from the Sun.
 	</p>
 	<div class="cta">

@@ -12,8 +12,8 @@
 	<h2><?php echo $answer ?></h2>
 				<img src="/assets/img/img-solar-system.png" alt="The solar system.">
 	<p>
-		<strong class="no">Wrong.</strong>
-		<strong class="yes">Correct!</strong> 
+		<strong class="no">Falsch.</strong>
+		<strong class="yes">Richtig!</strong> 
 		The Sun is the largest object in the solar system. It contains 99 percent of the mass of the solar system. Jupiter is the largest planet in the solar system, and Earth is the fifth-largest.
 	</p>
 	<div class="cta">
