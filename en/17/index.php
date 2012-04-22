@@ -10,7 +10,7 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
-				<img src="/assets/img/img-moon.png" alt="A closeup of the Earth's moon">
+	<img src="/assets/img/img-moon.png" alt="A closeup of the Earth's moon">
 	<p>
 		<strong class="no">Wrong.</strong>
 		<strong class="yes">Correct!</strong> 

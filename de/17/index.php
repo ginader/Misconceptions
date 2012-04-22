@@ -1,6 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
+	<img src="/assets/img/img-moon-earth.png" alt="The moon and the earth.">	
 	<p>The phases of the Moon are caused by the angle it makes with the orbit of the Earth and Sun.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
@@ -9,6 +10,7 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
+	<img src="/assets/img/img-moon.png" alt="A closeup of the Earth's moon">
 	<p>
 		<strong class="no">Falsch.</strong>
 		<strong class="yes">Richtig!</strong> 
