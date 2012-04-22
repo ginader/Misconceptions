@@ -10,14 +10,14 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
-	<img src="/assets/img/img-moon-phases-trigger.png" alt="A thumbnail to trigger the animation of the different hemisphere by Amit.">	
+	<a target="_blank" href="/MoonPhases/MoonPhases.html"><img src="/assets/img/img-moon-phases-trigger.png" alt="A thumbnail to trigger the animation of the different hemisphere by Amit."> </a>	
 	<p>
 		<strong class="no">Wrong.</strong>
 		<strong class="yes">Correct!</strong> 
 Northern and Southern hemispheres see different phases of the moon. 
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://www.uwgb.edu/dutchs/planets/sun.htm" id="more">I want to learn more about Moon!</a>
+		<a target="_blank" class="button" href="/MoonPhases/LunarLbration.html" id="more">I want to learn more about Moon!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>
