@@ -15,7 +15,7 @@
 		<strong class="no">Wrong.</strong>
 		<strong class="yes">Correct!</strong> 
 The Earth is going around the Sun and not the other way round. But day and night is caused by the rotation of the Earth about its own axis. At any given time, the half facing the Sun will be shined upon while the other half will 
-have no light. Places in the former will therefore experience day while places in the latter will experience night.Of course, since the Earth is rotating, the illuminated places will not be illuminated forever. After some time, it will be their turn to experience night.
+have no light.
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.universetoday.com/59707/what-causes-day-and-night/" id="more">I want to learn more about the moon!</a>
