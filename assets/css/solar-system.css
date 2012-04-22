@@ -36,7 +36,6 @@
 	top:66%;
 	background-color: #DDD;
 	border-radius:50%;
-	border:1px solid lime;
 	width:40px;
 	height:40px;
 	text-align:center;
@@ -45,6 +44,14 @@
 }
 .system:hover i{
 	background: rgba(255, 0, 0, 1);
+}
+
+.system .sun{
+	width:2%;
+	height:2%;
+	margin-left:-1%;
+	margin-top:-1%;
+	background-color: yellow;
 }
 
 .system .mercury{
@@ -67,6 +74,9 @@
 	margin-left:-11%;
 	margin-top:-11%;
 	animation-duration:12s;
+}
+.system .earth i{
+	border:1px solid red;
 }
 .system .mars{
 	width:28%;
