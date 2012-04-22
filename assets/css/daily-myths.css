@@ -204,3 +204,8 @@ ul#languages li a:focus{
 #about .face{
   width:500px;
 }
+
+h1 a{
+  text-decoration:none;
+  color:white;
+}
