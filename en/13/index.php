@@ -10,7 +10,7 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
-		<img src="/assets/img/img-solar-system.png" alt="The solar system.">	
+		<!-- <img src="/assets/img/img-solar-system.png" alt="The solar system.">	 -->
 	<!-- <img src="/assets/img/img-sun.png" alt="A closeup of the Sun."> -->
 	<?php include ($_SERVER['DOCUMENT_ROOT'].'/solar-system-anim.inc.php'); ?>
 	<p>
