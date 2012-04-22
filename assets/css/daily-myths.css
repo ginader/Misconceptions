@@ -118,7 +118,7 @@ h1{
           transform: rotateY( 180deg );
 }
 #card p{
-  min-height:90px;
+  /*min-height:90px;*/
 }
 #card p,
 #card h2{
@@ -199,4 +199,8 @@ ul#languages li a:focus{
   background-color: darkgray;
   padding: .5em;
   color:black;
+}
+
+#about .face{
+  width:500px;
 }
