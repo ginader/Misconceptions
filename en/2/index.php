@@ -1,7 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-		<img src="/assets/img/img-stars-5.png" alt="Stars in the Universe">	
+	<img src="/assets/img/img-stars-5.png" alt="Stars in the Universe">	
 	<p>All the stars are different distances from the Earth.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
@@ -10,10 +10,10 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
+	<img src="/assets/img/img-stars-4.png" alt="Stars in the Universe">	
 	<p>
 		<strong class="no">Wrong.</strong>
 		<strong class="yes">Correct!</strong> 
-		<img src="/assets/img/img-stars-4.png" alt="Stars in the Universe">	
 There could be huge differences. A brighter star at a bigger distance will look just like a weaker star at a shorter distance.
 	</p>
 	<div class="cta">
