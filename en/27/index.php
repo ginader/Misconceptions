@@ -1,7 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-	<p>The Earth is round like a pancake.</p>
+	<p>The Earth is the largest object in the solar system. It is larger than the Sun.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
@@ -12,10 +12,10 @@
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 
-The Earth is neither flat like a pancake nor perfectly round like a marble. The actual shape of the Earth is actually an oblate spheroid, a sphere with a bulge around the equator. 
+		No. The Sun is the largest object in the solar system. It contains 99 percent of the mass of the solar system. Jupiter is the largest planet in the solar system, and Earth is the fifth-largest.
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://www.universetoday.com/25893/is-the-earth-round/" id="more">I want to learn more about the earth!</a>
+		<a target="_blank" class="button" href="http://amazing-space.stsci.edu/resources/myths/solar_system.php.p=Capture+the+cosmos@,capture,%3ESolar+system@,capture,solarsyst," id="more">I want to learn more about stars!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>
