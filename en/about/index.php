@@ -33,6 +33,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 				<li><a target="_blank" href="http://twitter.com/ginader"><img src="/assets/img/ginader.png" alt="avatar of Dirk Ginader">Dirk Ginader</a> [developer]<p></li>
 				<li><a target="_blank" href="http://twitter.com/amitmrao"><img src="/assets/img/amirao.jpg" alt="avatar of Amit Rao">Amit Rao</a> [developer (moon phases)]<p></li>
 				<li><a target="_blank" href="http://twitter.com/kurzkeks"><img src="/assets/img/cotta.jpg" alt="avatar of Cotta Ginader">Cotta Ginader</a> [Researcher]<p></li>
+				<li><a target="_blank" href="http://twitter.com/themattharris"><img src="/assets/img/matt.jpg" alt="avatar of Matt Harris">Matt Harris</a> [Tech support]<p></li>
 			</ul><!-- /team -->
 
 
