@@ -206,6 +206,13 @@ ul#languages li a:focus{
   min-height:550px;
 }
 
+ul#team{
+  list-style-type: none;
+}
+ul#team{
+  margin-right: 10px;
+}
+
 h1 a{
   text-decoration:none;
   color:white;
