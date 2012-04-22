@@ -1,8 +1,7 @@
 <?php
 include 'languages.inc.php';
+include 'myths.inc.php';
 $show_lang = $default_lang;
-// temp until we have a full range of myths from 1 to n
-$myths = array(23, 24);
 shuffle($myths);
 //echo $myths[0];
 

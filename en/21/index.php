@@ -1,7 +1,7 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-	<p>The brightness of a star depends only on its distance from the Earth.</p>
+	<p>We see because light brightens things.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
@@ -12,10 +12,10 @@
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 
-The brightness of a star depends on its surface temperature and size.
+		You can see light because light is reflected of particles.
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://www.space.com/57-stars-formation-classification-and-constellations.html" id="more">I want to learn more about the stars!</a>
+		<a target="_blank" class="button" href="http://wiki.answers.com/Q/You_can_see_because_light_is" id="more">I want to learn more about light!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>
