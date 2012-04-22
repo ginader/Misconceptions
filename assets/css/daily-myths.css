@@ -173,3 +173,30 @@ h1{
 	background: linear-gradient(bottom,  #5b5b5b 0%,#585858 9%,#4d4d4d 27%,#282828 75%,#1a1a1a 100%);
 	
 }
+
+ul#languages{
+  display: none;
+  position: absolute;
+  right:0;
+  background-color: #000;
+  padding: 1em;
+}
+.open ul#languages{
+  display: block;
+}
+
+ul#languages li{
+  margin-left:0;
+  display: block;
+  padding: .5em;
+}
+ul#languages li a{
+  padding: .5em;
+  display: block;
+}
+ul#languages li a:hover,
+ul#languages li a:focus{
+  background-color: darkgray;
+  padding: .5em;
+  color:black;
+}

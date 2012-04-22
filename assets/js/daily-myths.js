@@ -10,4 +10,12 @@ $(document).ready(function() {
         $('#answer .yes').hide();
         $('#card').toggleClass('flipped');
     });
+
+
+    $('#language-nav>a').click(function(event){
+        event.preventDefault();
+        $(this).parent().toggleClass('open')
+        .find('ul a:first').focus();
+    });
+
 });
