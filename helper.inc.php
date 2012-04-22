@@ -1,6 +1,7 @@
 <?php
+include 'myths.inc.php';
 $first_id = 1;
-$last_id = 25;
+$last_id = $myths_amount;
 
 $current_id = intval(array_pop(array_filter(explode('/',$_SERVER['REQUEST_URI']))));
 $next_id = $current_id + 1;

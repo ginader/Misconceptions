@@ -1,3 +1,3 @@
 <?php 
-$myths = array(23, 24);
+$myths_amount = 20;
 ?>

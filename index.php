@@ -2,10 +2,8 @@
 include 'languages.inc.php';
 include 'myths.inc.php';
 $show_lang = $default_lang;
-shuffle($myths);
-//echo $myths[0];
 
-$show_myth = $myths[0];
+$show_myth = rand(1, $myths_amount);
 
 $user_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 //echo $user_lang;
