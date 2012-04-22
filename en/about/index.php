@@ -5,7 +5,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 ?>
 <body>
 <div id="header">
-	<h1>Daily Myths</h1>
+	<h1><a href="/">Daily Myths</a></h1>
 	<ul class="nav">
 		<li><a href="/en/about">about</a></li>
 		<!-- <li><a href="/credits">credits</a></li> -->
