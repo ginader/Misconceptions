@@ -1,8 +1,8 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-	<p>The Earth is round like a pancake.</p>
 	<img src="/assets/img/img-earth-01.png" alt="Earth in space.">
+	<p>The Earth is round like a pancake.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
