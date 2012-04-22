@@ -1,8 +1,8 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-	<p>The Sun is never directly overhead at noon.</p>
 		<img src="/assets/img/img-sun.png" alt="A closeup of the Sun.">
+	<p>The Sun is never directly overhead at noon.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
