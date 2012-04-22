@@ -3,7 +3,6 @@
 	<h2><?php echo $question ?></h2>
 	<img src="/assets/img/img-sun-earth.png" alt="earth larger than sun?">
 	<p>The Earth is larger than the Sun.</p>
-
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
