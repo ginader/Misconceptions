@@ -12,8 +12,8 @@
 	<h2><?php echo $answer ?></h2>
 		<img src="/assets/img/img-earth-sun.png" alt="The Earth orbiting the Sun.">		
 	<p>
-		<strong class="no">Wrong.</strong>
-		<strong class="yes">Correct!</strong> 
+		<strong class="Yes">Correct!</strong>
+		<strong class="no">Wrong.</strong> 
 The Earth is going around the Sun and not the other way round. But day and night is caused by the rotation of the Earth about its own axis. At any given time, the half facing the Sun will be shined upon while the other half will 
 have no light.
 	</p>
