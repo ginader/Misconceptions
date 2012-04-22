@@ -2,6 +2,7 @@
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
 	<p>The surface of the Sun has visible layers.</p>
+			<img src="/assets/img/img-sun.png" alt="A closeup of the Sun.">	
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
@@ -9,6 +10,7 @@
 </div>
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
+	<img src="/assets/img/img-sun-ultraviolet.png" alt="A closeup of the Sun in Ultraviolet to show the layers.">	
 	<p>
 		<strong class="no">Wrong.</strong>
 		<strong class="yes">Correct!</strong> 

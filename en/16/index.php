@@ -1,8 +1,8 @@
 <?php include '../header.inc.php'; ?>
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
-	<p>The Moon moves around the Earth in more than a day.</p>
 		<img src="/assets/img/img-moon.png" alt="A closeup of the Earth's moon">
+	<p>The Moon moves around the Earth in more than a day.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
