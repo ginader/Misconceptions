@@ -1,27 +1,27 @@
-decided to go all static content for the start instead of using a cms
+# [Daily Myths](http://dailymyths.org/)
 
-adding language folders
+This project was built in 48 hours during the [International Space Apps Challenge](http://spaceappschallenge.org/) on 21-22 April 2012 in San Francisco. **It won the Award for Education outreach!**
 
+The idea for it came out of the Challenge called: [Visualize the "All-too-Common Astronomy/Solar System Misconceptions](http://spaceappschallenge.org/challenge/visualize-all-too-common-astronomysolar-system-mis/). 
 
-earth video:
-http://www.flickr.com/photos/gsfc/4401845574/
+We thought the title was really long so we decided to rebrand it: Daily Myths [dailymyths.org](http://dailymyths.org)
 
-earth photo:
-http://www.flickr.com/photos/gsfc/4392965590/
+This Trivia is our approach to make people learn while having fun and to make those Misconceptions go away.
 
-earth plus good star background:
-http://www.flickr.com/photos/gsfc/5710028991/in/photostream
+## You can help!
 
+**If you happen to speak a language in which Daily Myths is not yet available** (currently available in: english, german) then it would be absolutely brilliant if you could add translations! It's easy! Just clone the [github repository](https://github.com/ginader/Misconceptions), duplicate the language folder of a language you know (en or de) and happily translate away! The UI strings live in strings.inc.php and all the myths in their own numbered folders. If you run into issues or have questions simply file an [issue in our tracker](https://github.com/ginader/Misconceptions/issues)
 
+**If you stumble over a common Myth that people still believe and you feel like you have to change that** then go ahead and add it! We always want people to become more educated :-)
 
-10/42. The Earth is the largest object in the solar system. It is larger than the Sun.
-11. The Earth is the center of the solar system. The planets, Sun and Moon revolve around the Earth.
-13. The Earth is round like a pancake.
-22. The solar system is very crowded.
-23. The solar system contains only the sun, planets and the moon.
-43. The Sun disappears at night.
-66. The Sun goes around the Earth.
+## The Team
 
+* [![avatar of Cindy Li](http://dailymyths.org/assets/img/cindyli.jpg)](http://twitter.com/cindyli) Cindy Li [design]
 
+* [![avatar of Dirk Ginader](http://dailymyths.org/assets/img/ginader.png)](http://twitter.com/ginader) Dirk Ginader [developer]
 
-http://blacksmith.jit.su/
+* [![avatar of Amit Rao](http://dailymyths.org/assets/img/amirao.jpg)](http://twitter.com/amitmrao) Amit Rao [developer (moon phases)]
+
+* [![avatar of Cotta Ginader](http://dailymyths.org/assets/img/cotta.jpg)](http://twitter.com/kurzkeks) Cotta Ginader [Researcher]
+
+* [![avatar of Matt Harris](http://dailymyths.org/assets/img/matt.jpg)](http://twitter.com/themattharris) Matt Harris [Tech support]
