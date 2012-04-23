@@ -8,7 +8,8 @@ body{
 	padding:0;
   background-color: #000;
 	background-image: url(../img/galaxy-back.jpg);
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
@@ -142,7 +143,11 @@ h1{
 }
 
 #card h2{
-  margin:.5em;
+  margin:.6em;
+}
+
+#card h3{
+  margin:.8em;
 }
 #card .cta{
 	/*padding: 1em;*/
@@ -219,6 +224,7 @@ ul#languages li a:focus{
 
 #about .face{
   width:500px;
+  height:auto;
   min-height:650px;
 }
 
