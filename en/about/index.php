@@ -26,6 +26,12 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 			<p>This project was built in 24 hours during the <a target="_blank" href="http://spaceappschallenge.org/">International Space Apps Challenge</a> on 21-22 April 2012.The San Francisco location was at <a target="_blank" href="http://techshop.ws/">TechShop.</a> </p>
 			<p>The idea for it came out of the Challenge called: <a target="_blank" href="http://spaceappschallenge.org/challenge/visualize-all-too-common-astronomysolar-system-mis/">Visualize the "All-too-Common Astronomy/Solar System Misconceptions</a> We thought the title was really long so we decided to rebrand it: Daily Myths.This Trivia is our approach to make people learn while having fun and to make those Misconceptions go away.</p>
 
+			<h2>You can help!</h2>
+
+			<p><strong>If you happen to speak a language in which Daily Myths is not yet available</strong> (currently available in: english, german) then it would be absolutely brilliant if you could add translations! It's easy! Just clone the <a href="https://github.com/ginader/Misconceptions">github repository</a>, duplicate the language folder of a language you know (en or de) and happily translate away! The UI strings live in strings.inc.php and all the myths in their own numbered folders. If you run into issues or have questions simply file an <a href="https://github.com/ginader/Misconceptions/issues">issue in our tracker</a></p>
+
+			<p><strong>If you stumble over a common Myth that people still believe and you feel like you have to change that</strong> then go ahead and add it! We always want people to become more educated :-)</p>
+
 			<h2>The Team</h2>
 
 			<ul id="team">
@@ -40,3 +46,5 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 
 		</div>
 <?php include '../footer.inc.php'; ?>
+
+
