@@ -126,6 +126,11 @@ h1{
        -o-transform: rotateY( 180deg );
           transform: rotateY( 180deg );
 }
+
+#answer .yes,
+#answer .no{
+  display: none;
+}
 #card p{
   /*min-height:90px;*/
 }
