@@ -23,7 +23,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 		<div class="face">
 			<h2>About Daily Myths</h2>
 				
-			<p>This project was built in 24 hours during the <a target="_blank" href="http://spaceappschallenge.org/">International Space Apps Challenge</a> on 21-22 April 2012.The San Francisco location was at <a target="_blank" href="http://techshop.ws/">TechShop.</a> </p>
+			<p>This project was built in 48 hours during the <a target="_blank" href="http://spaceappschallenge.org/">International Space Apps Challenge</a> on 21-22 April 2012. The San Francisco location was at <a target="_blank" href="http://techshop.ws/">TechShop.</a> </p>
 			<p>The idea for it came out of the Challenge called: <a target="_blank" href="http://spaceappschallenge.org/challenge/visualize-all-too-common-astronomysolar-system-mis/">Visualize the "All-too-Common Astronomy/Solar System Misconceptions</a> We thought the title was really long so we decided to rebrand it: Daily Myths.This Trivia is our approach to make people learn while having fun and to make those Misconceptions go away.</p>
 
 			<h3>You can help!</h3>
