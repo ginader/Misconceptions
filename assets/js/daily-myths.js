@@ -1,10 +1,12 @@
 $(document).ready(function() {
     $('#yes').click(function(){
         $('#answer .yes').show();
+        $('#answer .no').hide();
         $('#answer .galaxy').show();
     });
     $('#no').click(function(){
         $('#answer .no').show();
+        $('#answer .yes').hide();
     });
     // hack for the chrome backface visibility issue
     var is_chrome = /chrome/.test( navigator.userAgent.toLowerCase() );
