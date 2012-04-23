@@ -39,9 +39,4 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 
 
 		</div>
-
-
-	</div>
-</div><!-- /content -->
-</body>
-</html>
+<?php include '../footer.inc.php'; ?>
