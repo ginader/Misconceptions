@@ -126,7 +126,9 @@ h1{
        -o-transform: rotateY( 180deg );
           transform: rotateY( 180deg );
 }
-
+#answer.hidden{
+  visibility: hidden;
+}
 #answer .yes,
 #answer .no{
   display: none;
