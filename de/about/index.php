@@ -7,7 +7,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 <div id="header">
 	<h1><a href="/">Daily Myths</a></h1>
 	<ul class="nav">
-		<li><a href="/en/about">about</a></li>
+		<li><a href="/de/about">about</a></li>
 		<!-- <li><a href="/credits">credits</a></li> -->
 		<li id="language-nav" class="open_">
 			<a href="/language">change language</a>
