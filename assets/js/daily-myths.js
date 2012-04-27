@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('html').addClass('run');
     $('#yes').click(function(){
         $('#answer .yes').show();
         $('#answer .no').hide();
