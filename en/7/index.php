@@ -12,8 +12,8 @@
 	<h2><?php echo $answer ?></h2>
 	<img src="/assets/img/img-planets.png" alt="The solar system.">	
 	<p>
-		<strong class="no">Wrong.</strong>
-		<strong class="yes">Correct!</strong> 
+		<strong class="yes">Wrong.</strong>
+		<strong class="no">Correct!</strong> 
 Venus, Mars, Jupiter and Saturn are easy to observe with the unaided eye.
 Each planet is visible within a fixed schedule. For a given evening, each planet may be visible the entire evening, just part of the evening or not be visible at all. Over the course of the year, each of these planets will be visible at least part of the time.
 	</p>
