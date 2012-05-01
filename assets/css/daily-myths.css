@@ -79,6 +79,10 @@ h1{
   -webkit-transform: translate3d(0, 0, 0) rotate(0deg) scale(1,1);
   -moz-transform: translate3d(0, 0, 0) rotate(0deg) scale(1,1);
 }
+.unload.csstransforms.csstransitions .container{
+  -webkit-transform: translate3d(0, 0, 0) rotate(0deg) scale(0,0);
+  -moz-transform: translate3d(0, 0, 0) rotate(0deg) scale(0,0);
+}
 
 #card {
   width: 100%;
@@ -267,7 +271,7 @@ and (max-device-width : 480px) {
     margin-bottom: 5px;
   }
   html,body{
-    font-size:102%;
+    font-size:100%;
     height:auto;
     min-height:100%;
   }
