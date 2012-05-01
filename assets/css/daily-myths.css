@@ -238,7 +238,9 @@ ul#languages li a:focus{
   padding: .5em;
   color:black;
 }
-
+#about #card{
+  height:auto;
+}
 #about .face{
   width:500px;
   height:auto;
@@ -264,11 +266,16 @@ and (max-device-width : 480px) {
   #header {
     margin-bottom: 5px;
   }
-  html{
-    font-size:110%;
+  html,body{
+    font-size:102%;
+    height:auto;
+    min-height:100%;
   }
   #card h2 {
     margin: 0.3em 0.6em;
+  }
+  #about .face{
+    width:100%%;
   }
 }
 
