@@ -68,6 +68,25 @@ h1{
   position: relative;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
+
+  -webkit-transition: -webkit-transform .6s;
+   -moz-transition: -moz-transform .6s;
+    -ms-transition: -ms-transform .6s;
+     -o-transition: -o-transform .6s;
+        transition: transform .6s;
+}
+
+.csstransforms.csstransitions .panel{
+  -webkit-transform: rotate(7deg) scale(.2,.2);
+  -moz-transform: rotate(7deg) scale(.2,.2);
+}
+.run.csstransforms.csstransitions .panel{
+  -webkit-transform: rotate(0deg) scale(1,1);
+  -moz-transform: rotate(0deg) scale(1,1);
+}
+.unload.csstransforms.csstransitions .panel{
+  -webkit-transform: rotate(-7deg) scale(0,0);
+  -moz-transform: rotate(-7deg) scale(0,0);
 }
 
 .panel .front {
