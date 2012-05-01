@@ -1,5 +1,5 @@
 <?php include '../header.inc.php'; ?>
-<div class="face" id="question">
+<div class="front" id="question">
 	<h2><?php echo $question ?></h2>
 	<img src="/assets/img/img-stars-5.png" alt="Stars in the Universe">	
 	<p>All the stars are different distances from the Earth.</p>
@@ -8,7 +8,7 @@
 		<button id="no"><?php echo $no ?></button>
 	</div>
 </div>
-<div class="face" id="answer">
+<div class="back" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<img src="/assets/img/img-stars-4.png" alt="Stars in the Universe">	
 	<p>

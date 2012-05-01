@@ -1,5 +1,5 @@
 <?php include '../header.inc.php'; ?>
-<div class="face" id="question">
+<div class="front" id="question">
 	<h2><?php echo $question ?></h2>
 		<img src="/assets/img/img-planets.png" alt="The solar system.">
 	<p>The Earth is the center of the solar system. The planets, Sun and Moon revolve around the Earth.</p>
@@ -8,7 +8,7 @@
 		<button id="no"><?php echo $no ?></button>
 	</div>
 </div>
-<div class="face" id="answer">
+<div class="back" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<!-- <img src="/assets/img/img-sun.png" alt="A closeup of the Sun."> -->
 	<?php include ($_SERVER['DOCUMENT_ROOT'].'/solar-system-anim.inc.php'); ?>

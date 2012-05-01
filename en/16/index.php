@@ -1,5 +1,5 @@
 <?php include '../header.inc.php'; ?>
-<div class="face" id="question">
+<div class="front" id="question">
 	<h2><?php echo $question ?></h2>
 		<img src="/assets/img/img-moon.png" alt="A closeup of the Earth's moon">
 	<p>The Moon moves around the Earth in more than a day.</p>
@@ -8,7 +8,7 @@
 		<button id="no"><?php echo $no ?></button>
 	</div>
 </div>
-<div class="face" id="answer">
+<div class="back" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<img src="/assets/img/img-moon-2.png" alt="A moon behind the Lincoln Memorial in Washington, DC.">
 	<p>

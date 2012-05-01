@@ -1,5 +1,5 @@
 <?php include '../header.inc.php'; ?>
-<div class="face" id="question">
+<div class="front" id="question">
 	<h2><?php echo $question ?></h2>
 	<img src="/assets/img/img-night.png" alt="View from space of North America's lights.">
 	<p>We see because light brightens things.</p>
@@ -8,7 +8,7 @@
 		<button id="no"><?php echo $no ?></button>
 	</div>
 </div>
-<div class="face" id="answer">
+<div class="back" id="answer">
 	<h2><?php echo $answer ?></h2>
 		<img src="/assets/img/img-night-2.png" alt="View from space of Europe's lights.">
 	<p>

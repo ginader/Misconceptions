@@ -1,5 +1,5 @@
 
-	</div>
+
 </div><!-- /content -->
 <script type="text/javascript">
 

@@ -5,9 +5,9 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 ?>
 <body>
 <div id="header">
-	<h1><a href="/">Daily Myths</a></h1>
+	<h1><a href="/en/">Daily Myths</a></h1>
 	<ul class="nav">
-		<li><a href="/en/about">about</a></li>
+		<li><a href="/about">about</a></li>
 		<!-- <li><a href="/credits">credits</a></li> -->
 		<li id="language-nav" class="open_">
 			<a href="/language">change language</a>
@@ -18,5 +18,4 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 	</ul>	
 </div><!-- /header -->
 
-<div class="container">
-	<div id="card" class="flipped_">
+<div class="block panel">

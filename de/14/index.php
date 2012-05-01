@@ -1,5 +1,5 @@
 <?php include '../header.inc.php'; ?>
-<div class="face" id="question">
+<div class="front" id="question">
 	<h2><?php echo $question ?></h2>
 			<img src="/assets/img/img-sun.png" alt="The Sun.">
 	<p>The sun is the largest object in the solar system. It is larger than the earth.</p>
@@ -8,7 +8,7 @@
 		<button id="no"><?php echo $no ?></button>
 	</div>
 </div>
-<div class="face" id="answer">
+<div class="back" id="answer">
 	<h2><?php echo $answer ?></h2>
 				<img src="/assets/img/img-solar-system.png" alt="The solar system.">
 	<p>

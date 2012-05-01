@@ -1,5 +1,5 @@
 <?php include '../header.inc.php'; ?>
-<div class="face" id="question">
+<div class="front" id="question">
 	<h2><?php echo $question ?></h2>
 	<img src="/assets/img/img-moon-earth.png" alt="The moon and the earth.">	
 	<p>The phases of the Moon are caused by the angle it makes with the orbit of the Earth and Sun.</p>
@@ -8,7 +8,7 @@
 		<button id="no"><?php echo $no ?></button>
 	</div>
 </div>
-<div class="face" id="answer">
+<div class="back" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<img src="/assets/img/img-moon.png" alt="A closeup of the Earth's moon">
 	<p>

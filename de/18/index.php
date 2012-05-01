@@ -1,5 +1,5 @@
 <?php include '../header.inc.php'; ?>
-<div class="face" id="question">
+<div class="front" id="question">
 	<h2><?php echo $question ?></h2>
 	<p>The Earth's revolution around the sun causes night and day.</p>
 	<div class="cta">
@@ -7,7 +7,7 @@
 		<button id="no"><?php echo $no ?></button>
 	</div>
 </div>
-<div class="face" id="answer">
+<div class="back" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<p>
 		<strong class="yes">Falsch.</strong>
