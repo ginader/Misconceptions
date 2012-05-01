@@ -37,4 +37,8 @@ $(document).ready(function() {
         .find('ul a:first').focus();
     });
 
+    $('#next').click(function(){
+        $('html').addClass('unload');
+    })
+
 });
