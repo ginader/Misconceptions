@@ -18,5 +18,4 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 	</ul>	
 </div><!-- /header -->
 
-<div class="container">
-	<div id="card" class="flipped_">
+<div class="block panel">

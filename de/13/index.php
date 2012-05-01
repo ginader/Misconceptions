@@ -1,18 +1,17 @@
 <?php include '../header.inc.php'; ?>
 <div class="front" id="question">
 	<h2><?php echo $question ?></h2>
-		<img src="/assets/img/img-planets.png" alt="The solar system.">
+	<img src="/assets/img/img-planets-2.png" alt="The solar system.">
 	<p>The Earth is the center of the solar system. The planets, Sun and Moon revolve around the Earth.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
 	</div>
 </div>
-<div class="back" id="answer">
+<div class="back clear" id="answer">
 	<h2><?php echo $answer ?></h2>
-	<!-- <img src="/assets/img/img-sun.png" alt="A closeup of the Sun."> -->
 	<?php include ($_SERVER['DOCUMENT_ROOT'].'/solar-system-anim.inc.php'); ?>
-	<p>
+	<p class="fill">
 		<strong class="yes">Falsch.</strong>
 		<strong class="no">Richtig!</strong> 
 		The Sun is at the center of the solar system, and the planets (Earth is one of them), asteroids, moons, and comets orbit the Sun. The Earth is the third planet from the Sun.

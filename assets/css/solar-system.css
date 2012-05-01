@@ -10,8 +10,10 @@
 	-o-perspective-origin: 50% 50%;
 	-ms-perspective-origin: 50% 50%;
 	perspective-origin: 50% 50%;
-	margin-top:-40%;
-	margin-bottom:-20%;
+/*	margin-top:-40%;
+	margin-bottom:-20%;*/
+	overflow: hidden;
+	height:180px;
 }
 .system{
 	/*background-color: black;*/
@@ -23,11 +25,11 @@
 	/*border:1px solid black;*/
 }
 .system{
-	margin:auto;
+	margin: -46% auto -30% -13%;
 	padding:0;
 	position:relative;
-	height:400px;
-	width:400px;
+	height:500px;
+	width:500px;
 }
 .system li{
 	position: absolute;
@@ -53,8 +55,8 @@
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
 	border-radius:50%;
-	border:1px solid #ccc;
-	border:1px solid rgba(0, 0, 0, .1);
+	border:1px solid #fff;
+	border:1px solid rgba(250, 250, 250, .3);
 }
 /*.system:hover li{
 	background: rgba(0, 0, 0, .1);
