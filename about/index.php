@@ -1,26 +1,25 @@
 <?php 
 include ($_SERVER['DOCUMENT_ROOT'].'/helper.inc.php');
-include ('../strings.inc.php');
+include ($_SERVER['DOCUMENT_ROOT'].'/en/strings.inc.php');
 include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 ?>
 <body>
 <div id="header">
 	<h1><a href="/">Daily Myths</a></h1>
 	<ul class="nav">
-		<li><a href="/de/about">about</a></li>
+		<li><a href="/en/about">about</a></li>
 		<!-- <li><a href="/credits">credits</a></li> -->
 		<li id="language-nav" class="open_">
 			<a href="/language">change language</a>
 			<ul id="languages">
-				<li><a href="/en/about">english</a></li>
+				<li><a href="/de">deutsch</a></li>
 			</ul>
 		</li>
 	</ul>	
 </div><!-- /header -->
 
-<div class="container" id="about">
-	<div id="card" class="flipped_">
-		<div class="face">
+<div class="block panel">
+		<div class="front" id="question">
 			<h2>About Daily Myths</h2>
 				
 			<p>This project was built in 48 hours during the <a target="_blank" href="http://spaceappschallenge.org/">International Space Apps Challenge</a> on 21-22 April 2012. The San Francisco location was at <a target="_blank" href="http://techshop.ws/">TechShop.</a> </p>
@@ -43,7 +42,6 @@ include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 			</ul><!-- /team -->
 
 
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/en/footer.inc.php'); ?>
 
-		</div>
 
-<?php include '../footer.inc.php'; ?>
