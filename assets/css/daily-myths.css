@@ -256,3 +256,27 @@ h1 a{
   text-decoration:none;
   color:white;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  #header {
+    margin-bottom: 5px;
+  }
+  html{
+    font-size:110%;
+  }
+  #card h2 {
+    margin: 0.3em 0.6em;
+  }
+}
+
+/* iPhone retina ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+
