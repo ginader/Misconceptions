@@ -11,13 +11,12 @@
 <div class="face" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<img src="/assets/img/img-solar-system-2.png" alt="Our solar system with all the planets.">	
-	<p>
-		<strong class="yes">Richtig!</strong>
-		<strong class="no">Falsch.</strong> 
-		The earth goes around the sun in 365.24 days. Most of the time our calendar is 365 days and every 4th year it is 366 days. That's why we have a leap year!
+		<strong class="no">Richtig!</strong>
+		<strong class="yes">Falsch.</strong> 
+		Die Erde bewegt sich um die Sonne in 365.24 Tagen. Unser Kalender zeigt meistens 365 Tage aber alle 4 Jahre sind es 366 Tage. Darum haben wir Schaltjahre!
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://www.astronomy.org/astronomy/misconceptions.html#3" id="more">I want to learn more about the earth and sun!</a>
+		<a target="_blank" class="button" href="http://www.astronomy.org/astronomy/misconceptions.html#3" id="more">Ich m&ouml;chte mehr &uuml;ber die Erde und die Sonne lernen!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>
