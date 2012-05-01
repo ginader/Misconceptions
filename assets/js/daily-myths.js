@@ -42,3 +42,6 @@ $(document).ready(function() {
     })
 
 });
+$(window).load(function() {
+    $('body').scrollTop(1);
+});
