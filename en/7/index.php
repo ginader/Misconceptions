@@ -2,7 +2,7 @@
 <div class="front" id="question">
 	<h2><?php echo $question ?></h2>
 	<img src="/assets/img/img-solar-system-2.png" alt="A view of the solar system and the order of all the planets.">
-	<p>Planets cannot be seen with the naked eye</p>
+	<p>Planets cannot be seen with the naked eye.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
