@@ -17,7 +17,7 @@
 The Moon's phases depends on two things: the Moon is round, and the angle it makes with the Earth and Sun changes over its orbit.
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://home.hiwaay.net/~krcool/Astro/moon/moonphase/" id="more">I want to learn more about the moon!</a>
+		<a target="_blank" class="button" href="http://home.hiwaay.net/~krcool/Astro/moon/moonphase/" id="more">I want to learn more about the Moon!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>

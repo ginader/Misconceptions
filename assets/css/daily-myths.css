@@ -179,6 +179,7 @@ h1{
 }
 .panel p{
   padding:.6em;
+  font-size: 19px;
 }
 
 .panel p.fill{

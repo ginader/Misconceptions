@@ -17,7 +17,7 @@
 		The Sun is the largest object in the solar system. It contains 99 percent of the mass of the solar system.
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://amazing-space.stsci.edu/resources/myths/solar_system.php.p=Capture+the+cosmos@,capture,%3ESolar+system@,capture,solarsyst," id="more">I want to learn more about stars!</a>
+		<a target="_blank" class="button" href="http://amazing-space.stsci.edu/resources/myths/solar_system.php.p=Capture+the+cosmos@,capture,%3ESolar+system@,capture,solarsyst," id="more">I want to learn more about Stars!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>

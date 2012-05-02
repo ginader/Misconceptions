@@ -14,10 +14,10 @@
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 
-		You can see light because light is reflected of particles.
+		Light reflects off of things and into your eye, where it is detected, turned into nerve impulses and sent on to your brain.
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://wiki.answers.com/Q/You_can_see_because_light_is" id="more">I want to learn more about light!</a>
+		<a target="_blank" class="button" href="http://wiki.answers.com/Q/Is_it_true_you_see_because_light_brightens_things#ixzz1tgwCO7kl" id="more">I want to learn more about light!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>

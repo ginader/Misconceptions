@@ -2,7 +2,7 @@
 <div class="front" id="question">
 	<h2><?php echo $question ?></h2>
 	<img src="/assets/img/img-sun.png" alt="A closeup of the Sun.">
-	<p>The Earth goes around the Sun in exactly one year</p>
+	<p>The Earth goes around the Sun in exactly one year.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
@@ -17,7 +17,7 @@
 		The Earth goes around the Sun in 365.24 days. Most of the time our calendar is 365 days and every 4th year it is 366 days. That's why we have a leap year!
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://www.astronomy.org/astronomy/misconceptions.html#3" id="more">I want to learn more about the earth and sun!</a>
+		<a target="_blank" class="button" href="http://www.astronomy.org/astronomy/misconceptions.html#3" id="more">I want to learn more about the Earth!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>

@@ -17,7 +17,7 @@
 		The Moon moves around the Earth in an approximately circular orbit, going once around us in approximately 27.3 days.
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://cseligman.com/text/sky/moonmotion.htm" id="more">I want to learn more about the moon!</a>
+		<a target="_blank" class="button" href="http://cseligman.com/text/sky/moonmotion.htm" id="more">I want to learn more about the Moon!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>
