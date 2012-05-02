@@ -2,7 +2,7 @@
 <div class="face" id="question">
 	<h2><?php echo $question ?></h2>
 	<img src="/assets/img/img-moon.png" alt="The Moon at night.">
-	<p>Different countries see different phases of the Moon on the same day..</p>	
+	<p>Different countries see different phases of the Moon on the same day.</p>	
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
@@ -14,7 +14,7 @@
 	<p>
 		<strong class="no">Wrong.</strong>
 		<strong class="yes">Correct!</strong> 
-Northern and Southern hemispheres see different phases of the moon. 
+Northern and southern hemispheres see different phases of the Moon. 
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="/MoonPhases/LunarLibration.html" id="more">I want to learn more about Moon!</a>

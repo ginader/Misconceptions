@@ -2,7 +2,7 @@
 <div class="front" id="question">
 	<h2><?php echo $question ?></h2>
 	<img src="/assets/img/img-sun.png" alt="The Sun.">
-	<p>The sun is the largest object in the solar system. It is larger than the earth.</p>
+	<p>The Sun is the largest object in the solar system. It is larger than the Earth.</p>
 	<div class="cta">
 		<button id="yes"><?php echo $yes ?></button>
 		<button id="no"><?php echo $no ?></button>
@@ -14,7 +14,7 @@
 	<p>
 		<strong class="no">Wrong.</strong>
 		<strong class="yes">Correct!</strong> 
-		The Sun is the largest object in the solar system. It contains 99 percent of the mass of the solar system. Jupiter is the largest planet in the solar system, and Earth is the fifth-largest.
+		The Sun is the largest object in the solar system. It contains 99 percent of the mass of the solar system.
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://amazing-space.stsci.edu/resources/myths/solar_system.php.p=Capture+the+cosmos@,capture,%3ESolar+system@,capture,solarsyst," id="more">I want to learn more about stars!</a>

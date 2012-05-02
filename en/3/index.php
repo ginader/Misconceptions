@@ -14,7 +14,7 @@
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 
-Each constellation is a collection of stars that are distributed in space in three dimensions. Stars are all different distances from Earth. Stars vary greatly in size, distance from Earth, and temperature. Dimmer stars may be smaller, farther away, or cooler than brighter stars.
+Stars vary greatly in size, distance from Earth, and temperature. Dimmer stars may be smaller, farther away, or cooler than brighter stars.
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.space.com/57-stars-formation-classification-and-constellations.html" id="more">I want to learn more about the stars!</a>

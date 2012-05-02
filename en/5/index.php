@@ -14,7 +14,8 @@
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 
-Even though they are commonly called "shooting star" or "falling star" a meteor is not a star, but the the visible path of a meteoroid that enters Earth's (or another body's) atmosphere. A meteoroid is a sand- to boulder-sized particle of debris in the Solar System.  If a meteoroid reaches the ground and survives impact, then it is called a meteorite. 
+Commonly called a "shooting star" or "falling star" a Meteor is not a star, but the the visible path of a meteoroid that enters Earth's atmosphere.
+
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.space.com/57-stars-formation-classification-and-constellations.html" id="more">I want to learn more about the stars!</a>

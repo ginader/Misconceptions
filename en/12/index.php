@@ -14,7 +14,7 @@
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 
-The Earth is neither flat like a pancake nor perfectly round like a marble. The actual shape of the Earth is actually an oblate spheroid, a sphere with a bulge around the equator. 
+		The Earth is neither flat like a pancake nor perfectly round like a marble. The shape of the Earth is actually an oblate spheroid, a sphere with a bulge around the equator. 
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.universetoday.com/25893/is-the-earth-round/" id="more">I want to learn more about the earth!</a>

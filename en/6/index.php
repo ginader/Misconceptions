@@ -14,11 +14,10 @@
 	<p>
 		<strong class="no">Correct!</strong>
 		<strong class="yes">No.</strong> 
-Just like the planets, our Moon does not produce its own light. It "shines" because it reflects the Sun's light. As our Moon orbits around Earth, the side facing the Sun is always 
-illuminated, just like Earth's daylight side is illuminated by the Sun.
+The lunar phases are created by changing angles of the Earth, the Moon and the Sun, as the Moon orbits the Earth.
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="http://www.moonconnection.com/moon_phases.phtml" id="more">I want to learn more about the moon!</a>
+		<a target="_blank" class="button" href="http://www.moonconnection.com/moon_phases.phtml" id="more">I want to learn more about the Moon!</a>
 		<a class="button" href="<?php echo $link_to_next ?>" id="next"><?php echo $next ?></a>
 	<div>
 </div>

@@ -14,8 +14,7 @@
 	<p>
 		<strong class="yes">Wrong.</strong>
 		<strong class="no">Correct!</strong> 
-Venus, Mars, Jupiter and Saturn are easy to observe with the unaided eye.
-Each planet is visible within a fixed schedule. For a given evening, each planet may be visible the entire evening, just part of the evening or not be visible at all. Over the course of the year, each of these planets will be visible at least part of the time.
+Venus, Mars, Jupiter and Saturn can be seen with the naked eye. Over the course of the year, each of these planets will be visible at least part of the time.
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.umich.edu/~lowbrows/guide/eye.html" id="more">I want to learn more about the planets!</a>

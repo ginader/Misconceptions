@@ -14,7 +14,7 @@
 	<p>
 		<strong class="no">Wrong.</strong>
 		<strong class="yes">Correct!</strong> 
-The Sun's visible surface shows a variety of features. Most conspicuous are the sunspots, great dark disturbances which can be many times larger than the earth. Observations of sunspots from day to day show that the Sun rotates. 
+		The Sun's visible surface shows sunspots as the sun rotates. Sunspots are great dark disturbances which can be many times larger than the earth.
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.uwgb.edu/dutchs/planets/sun.htm" id="more">I want to learn more about sun!</a>

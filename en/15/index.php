@@ -14,7 +14,7 @@
 	<p>
 		<strong class="no">Correct!</strong>
 		<strong class="yes">Wrong.</strong> 
-		The earth goes around the sun in 365.24 days. Most of the time our calendar is 365 days and every 4th year it is 366 days. That's why we have a leap year!
+		The Earth goes around the Sun in 365.24 days. Most of the time our calendar is 365 days and every 4th year it is 366 days. That's why we have a leap year!
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.astronomy.org/astronomy/misconceptions.html#3" id="more">I want to learn more about the earth and sun!</a>
