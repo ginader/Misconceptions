@@ -14,7 +14,7 @@
 	<p>
 		<strong class="yes">Correct!</strong>
 		<strong class="no">Wrong.</strong> 
-The Earth is goes around the Sun. Day and night is caused by the rotation of the Earth on its own axis. At any given time, the half facing the Sun will be shined upon while the other half will have no light.
+The Earth rotates around the Sun. Day and night is caused by the rotation of the Earth on its own axis. At any given time, the half facing the Sun will be shined upon while the other half will have no light.
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.universetoday.com/59707/what-causes-day-and-night/" id="more">I want to learn more about the moon!</a>
