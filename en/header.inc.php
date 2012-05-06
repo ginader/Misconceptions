@@ -3,7 +3,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/helper.inc.php');
 include ('strings.inc.php');
 include ($_SERVER['DOCUMENT_ROOT'].'/head.inc.php');
 ?>
-<body>
+<body lang="en">
 <div id="header">
 	<h1><a href="/en/">Daily Myths</a></h1>
 	<ul class="nav">
