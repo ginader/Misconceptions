@@ -14,7 +14,7 @@
 	<p>
 		<strong class="no">Correct!</strong>
 		<strong class="yes">Wrong.</strong> 
-The Earth spins on its axis, around the sun in an elliptical orbit in about 365 1/4 days. The Earth's spin axis is tilted. This is what causes the seasons. When the Earth's axis points towards the Sun, it is summer for that hemisphere. When the Earth's axis points away, winter can be expected.
+The Earth spins on its axis, around the sun in an elliptical orbit in about 365 1/4 days. It's axis is tilted. This is what causes the seasons. 
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.wrh.noaa.gov/fgz/science/season.php?wfo=fgz" id="more">I want to learn more about the seasons!</a>
