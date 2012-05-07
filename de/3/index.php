@@ -12,7 +12,7 @@
 	<p>
 		<strong class="yes">Falsch.</strong>
 		<strong class="no">Richtig!</strong> 
-Jede Konstellation ist eine Konstellation aus Sternen welche in drei Dimensionen im Weltraum verteilt sind. Die Sterne haben alle eine andere Entfernung zur Erde auch wenn es für uns so aussieht, als seien diejenigen einer Konstellation alle am selben Ort. Das liegt daran, dass wir sie von sehr sehr weit entfernt betrachten. Sterne unterscheiden sich nicht nur in der Distanz zur Erde von einander, sondern auch in Größe und Temperatur. Schwächere Sterne können kleiner, weiter entfernt und kühler sein als hellere Sterne. Das bedeutet aber auch, dass der hellste Stern nicht unbedingt der nähste sein muss. 
+Jede Konstellation ist eine Konstellation aus Sternen welche in drei Dimensionen im Weltraum verteilt sind. Die Sterne haben alle eine andere Entfernung zur Erde auch wenn es f&uuml;r uns so aussieht, als seien diejenigen einer Konstellation alle am selben Ort. Das liegt daran, dass wir sie von sehr sehr weit entfernt betrachten. Sterne unterscheiden sich nicht nur in der Distanz zur Erde von einander, sondern auch in Gr&ouml;&szlig;e und Temperatur. Schw&auml;chere Sterne k&ouml;nnen kleiner, weiter entfernt und k&uuml;hler sein als hellere Sterne. Das bedeutet aber auch, dass der hellste Stern nicht unbedingt der n&auml;hste sein muss. 
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://www.lpi.usra.edu/education/skytellers/constellations/about.shtml" id="more">Mehr davon!</a>
