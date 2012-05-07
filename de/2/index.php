@@ -10,9 +10,9 @@
 <div class="back" id="answer">
 	<h2><?php echo $answer ?></h2>
 	<p>
-		<strong class="no">Falsch.</strong>
-		<strong class="yes">Richtig!</strong> 
-Es gibt große Unterschiede zwischen den Entfernungen der Sterne zur Erde. Ein heller Stern, welcher sehr weit entfernt ist, kann z.B. genauso erscheinen wie ein dunklerer Stern welcher näher ist. 
+		<strong class="yes">Falsch.</strong>
+		<strong class="no">Richtig!</strong> 
+Es gibt gro&szlig;e Unterschiede zwischen den Entfernungen der Sterne zur Erde. Ein heller Stern, welcher sehr weit entfernt ist, kann z.B. genauso erscheinen wie ein dunklerer Stern welcher n&auml;her ist. 
 	</p>
 	<div class="cta">
 		<a target="_blank" class="button" href="http://wiki.answers.com/Q/Are_all_the_stars_in_a_constellation_the_same_distance_away_from_us" id="more">Mehr davon!</a>
