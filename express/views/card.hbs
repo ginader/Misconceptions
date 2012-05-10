@@ -1,0 +1,44 @@
+<div id="header">
+	<h1><a href="/{{languagecode}}/">Daily Myths</a></h1>
+	<ul class="nav">
+		<li><a href="/about">about</a></li>
+		<li id="language-nav" class="open_">
+			<a href="/language">change language</a>
+			<ul id="languages">
+				<li><a href="/de/1">deutsch</a></li>
+			</ul>
+		</li>
+	</ul>	
+</div><!-- /header -->
+
+<div class="block panel"><div class="front" id="question">
+	<h2>{{question_title}}</h2>
+		<img src="/images/img-stars-3.png" alt="Stars in space">
+	<p>{{question}}</p>
+	<div class="cta">
+		<button id="yes">{{yes}}</button>
+		<button id="no">{{no}}</button>
+	</div>
+</div>
+<div class="back" id="answer">
+	<h2>{{answer_title}}</h2>
+		<img src="/images/img-star-1.png" alt="Stars at different sizes">
+	<p>
+		{{#if truth}}
+    		<strong class="yes">{{correct}}</strong>
+    		<strong class="no">{{wrong}}</strong>
+  		{{else}}
+    		<strong class="yes">{{wrong}}</strong>
+    		<strong class="no">{{correct}}</strong>
+  		{{/if}}
+		 
+		{{answer}}
+	</p>
+	<div class="cta">
+		<a target="_blank" class="button" href="{{link}}" id="more">I want to learn more about the stars!</a>
+		<a class="button" href="../2" id="next">{{next}}</a>
+	<div>
+</div>
+
+
+</div><!-- /content -->
