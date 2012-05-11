@@ -280,11 +280,11 @@ ul#languages li a:focus{
   padding: .5em;
   color:black;
 }
-#about .panel{
+#about.panel{
   height:auto;
-}
-#about .face{
   width:500px;
+}
+#about .front{
   height:auto;
   min-height:650px;
 }

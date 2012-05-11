@@ -35,6 +35,11 @@ $(document).ready(function() {
         event.preventDefault();
         $(this).parent().toggleClass('open')
         .find('ul a:first').focus();
+    })
+
+    $("#languages").on("mouseover", "a", function(event) {
+        console.log($(event.currentTarget));
+        $(event.currentTarget).focus();
     });
 
     $('#next').click(function(){

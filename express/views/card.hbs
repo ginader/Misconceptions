@@ -5,23 +5,23 @@
 		<li id="language-nav" class="open_">
 			<a href="/language">change language</a>
 			<ul id="languages">
-				<li><a href="/de/1">deutsch</a></li>
+				{{#nav}}<li><a href="/{{languagecode}}/{{../id}}">{{language}}</a></li>{{/nav}}
 			</ul>
 		</li>
 	</ul>	
 </div><!-- /header -->
 
 <div class="block panel"><div class="front" id="question">
-	<h2>{{question_title}}</h2>
+	<h2>{{question}}</h2>
 		<img src="/images/img-stars-3.png" alt="Stars in space">
-	<p>{{question}}</p>
+	<p>{{question_text}}</p>
 	<div class="cta">
 		<button id="yes">{{yes}}</button>
 		<button id="no">{{no}}</button>
 	</div>
 </div>
 <div class="back" id="answer">
-	<h2>{{answer_title}}</h2>
+	<h2>{{answer}}</h2>
 		<img src="/images/img-star-1.png" alt="Stars at different sizes">
 	<p>
 		{{#if truth}}
@@ -32,11 +32,11 @@
     		<strong class="no">{{correct}}</strong>
   		{{/if}}
 		 
-		{{answer}}
+		{{answer_text}}
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="{{link}}" id="more">I want to learn more about the stars!</a>
-		<a class="button" href="../2" id="next">{{next}}</a>
+		<a target="_blank" class="button" href="{{link}}" id="more">{{more}}</a>
+		<a class="button" href="{{nextId}}" id="next">{{next}}</a>
 	<div>
 </div>
 

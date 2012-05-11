@@ -12,45 +12,13 @@ var hbs = require('hbs');
 
 var app = module.exports = express.createServer();
 
-/* should end up looking like this */
-// var pageDB = {
-// 	languages : {
-// 		en : {
-// 			languagecode: 'en',
-// 		    language: 'English',
-// 		    active: 'TRUE',
-// 		    question: 'Truth or Myth?',
-// 		    answer: 'Answer',
-// 		    yes: 'Yes! You speak the truth.',
-// 		    no: 'No. This is a Myth.',
-// 		    next: 'Next Trivia Question'
-// 		},
-// 		de : {
-// 			languagecode: 'de',
-// 		    language: 'Deutsch',
-// 		    active: 'TRUE',
-// 		    question: 'Wahrheit oder Mythos?',
-// 		    answer: 'Antwort',
-// 		    yes: 'Ja. Du sprichst die Wahrheit',
-// 		    no: 'Nein. Das ist ein Mythos',
-// 		    next: 'Nächste Frage'
-// 		}
-// 	},
-// 	cards : [{
-// 		id:1,
-// 		correct:true,
-// 		question_en:'en',
-// 		question_de:'de',
-// 		link:'http'
-// 	}]
-// };
-
-var defaultLanguage = 'en';
-
-var pageDB;
+var defaultLocale = 'en';
+var pageDB = {};
+var cardCount;
 
 function initPageDB(){
 	pageDB = {
+		nav : [],
 		languages : {},
 		cards : []
 	};
@@ -58,11 +26,11 @@ function initPageDB(){
 
 function getStrings(){
 	// get cards
-	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=3&output=csv' and columns='languagecode,language,active,question,answer,yes,no,next,wrong,correct'", function(response) {
+	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=3&output=csv' and columns='languagecode,language,active,question,answer,yes,no,next,wrong,correct,more'", function(response) {
 		if (response.error) {
-			console.log("Error: " + response.error.description);
+			console.log("getStrings Error: " + response.error.description);
 		} else {
-	        console.log("success: ---------------------------");
+	        console.log("getStrings success: ---------------------------");
 	        //console.log(response);
 	        //console.log(response.query.results);
 	        var languages = response.query.results.row;
@@ -70,6 +38,7 @@ function getStrings(){
 	        	var lang = languages[i];
 	        	if(lang.active.toUpperCase() =='TRUE'){ // is there any way to get this as BOOL from gdocs?
 	        		pageDB.languages[lang.languagecode] = lang;
+	        		pageDB.nav.push(lang);
 	        	}
 	        }
 	        //console.log('languages added: ---------------------------');
@@ -82,12 +51,13 @@ function getCards(){
 	// get cards
 	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=2&output=csv' and columns='id,truth,question_en,answer_en,link,question_de,answer_de,question_es,answer_es,question_zh,answer_zh'", function(response) {
 		if (response.error) {
-			console.log("Error: " + response.error.description);
+			console.log("getCards Error: " + response.error.description);
 		} else {
-	        console.log("success: ---------------------------");
+	        console.log("getCards success: ---------------------------");
 	        //console.log(response);
 	        //console.log(response.query.results);
 	        var cards = response.query.results.row;
+	        cardCount = cards.length-1;
 	        for(var i=1;i<cards.length;i++){
 	        	var card = cards[i];
 	        	console.log(card);
@@ -96,7 +66,7 @@ function getCards(){
 	        		truth : (card.truth.toLowerCase() == 'true'),
 	        		link : card.link
 	        	}
-	        	// only store the string for the active languages
+	        	// only store the strings for the activated languages
 	        	for (var lang in pageDB.languages){
 	        		pageDB.cards[card.id][lang] = {
 	        			question : card['question_'+lang],
@@ -109,9 +79,47 @@ function getCards(){
 	});
 };
 
-// manually set render engine, under normal circumstances this
-// would not be needed as hbs would be installed through npm
-//app.engine('hbs', hbs.__express);
+// https://github.com/mashpie/i18n-node/blob/master/i18n.js
+function guessLanguage(request) {
+    if (typeof request === 'object') {
+        var language_header = request.headers['accept-language'],
+        languages = [],
+        regions = [];
+        request.languages = [defaultLocale];
+        request.regions = [defaultLocale];
+        request.language = defaultLocale;
+        request.region = defaultLocale;
+
+        if (language_header) {
+            language_header.split(',').forEach(function(l) {
+                header = l.split(';', 1)[0];
+                lr = header.split('-', 2);
+                if (lr[0]) {
+                    languages.push(lr[0].toLowerCase());
+                }
+                if (lr[1]) {
+                    regions.push(lr[1].toLowerCase());
+                }
+            });
+
+            if (languages.length > 0) {
+                request.languages = languages;
+                request.language = languages[0];
+            }
+
+            if (regions.length > 0) {
+                request.regions = regions;
+                request.region = regions[0];
+            }
+        }
+    }
+}
+
+function getRandomCardId(){
+	return Math.floor(Math.random() * cardCount + 1);
+}
+
+
 
 // set the view engine to use handlebars
 app.set('view engine', 'hbs');
@@ -137,45 +145,20 @@ hbs.registerHelper('list', function(items, fn) {
 
 hbs.registerPartial('link2', '<a href="/people/{{id}}">{{name}}</a>');
 
-app.get('/:language/:id', function(req, res){
-	var language = req.params.language; // check for validity!
-	var id = req.params.id // check for validity!
-
-	var str = pageDB.languages[language];
-	var card = pageDB.cards[id];
-	card_str = card[language];
-
-
-	str.id = card.id;
-	str.truth = card.truth;
-	str.link = card.link;
-	str.question = card_str.question;
-	str.answer = card_str.answer;
-
-	console.log('str: ');
-	console.log(str);
-	/*
-{ languagecode: 'en',
-  language: 'English',
-  active: 'TRUE',
-  question: 'The Earth is the center of the solar system. The planets, Sun and Moon revolve around the Earth.',
-  answer: 'The Sun is at the center of the solar system, and the planets, asteroids, moons, and comets orbit the Sun. The Earth is the third planet from the Sun.',
-  yes: 'Yes! You speak the truth.',
-  no: 'No. This is a Myth.',
-  next: 'Next Trivia Question',
-  id: '13',
-  correct: false,
-  link: 'http://amazing-space.stsci.edu/resources/myths/solar_system.php.p=Capture+the+cosmos@,capture,%3ESolar+system@,capture,solarsyst,' }
-	*/
-	res.render('card', str);
+hbs.registerHelper('languageNav', function(items, fn) {
+  var out = "<ul>";
+  for(var i=0, l=items.length; i<l; i++) {
+    out = out + "<li>" + fn(items[i]) + "</li>";
+  }
+  return out + "</ul>";
 });
+
+
 
 app.get('/refresh', function(req, res){
   	initPageDB();
   	getStrings();
-	res.render('card', {
-		question_title: "refreshing - isn't it? ;-)"
-	});
+  	res.send("refreshing - isn't it? ;-)", 200);
 });
 
 app.get('/about', function(req, res){
@@ -218,7 +201,58 @@ app.get('/demo', function(req, res){
   });
 });
 
+app.get('/:language/:id', function(req, res, next){
+	var language = req.params.language; // check for validity!
+	var id = parseInt(req.params.id,10) // check for validity!
 
+	if(isNaN(id)){
+		next();
+	}
+
+	var nextId = id+1;
+	if(nextId > cardCount){
+		nextId = 1;
+	}
+
+	var str = pageDB.languages[language];
+	var card = pageDB.cards[id];
+
+	if(!str || !card){
+		next();
+	}
+
+	card_str = card[language];
+
+	str.id = card.id;
+	str.truth = card.truth;
+	str.link = card.link;
+	str.question_text = card_str.question;
+	str.answer_text = card_str.answer;
+	str.nav = pageDB.nav;
+	str.nextId = nextId;
+
+	console.log('str: ');
+	console.log(str);
+
+	res.render('card', str);
+});
+
+app.get('/:language', function(req, res, next){
+	var language = req.params.language; // check for validity!
+	var id = getRandomCardId();
+	//res.send('redirect to myths #'+getRandomCardId()+' in language: '+language, 200);
+	res.redirect('/'+language+'/'+id);
+});
+
+app.get('/', function(req, res){
+	guessLanguage(req)
+	var language = req.language
+	res.redirect('/'+language);
+});
+
+app.get('*', function(req, res){
+  res.send('ummm what?', 404);
+});
 
 
 app.listen(3000, function(){
