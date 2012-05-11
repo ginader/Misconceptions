@@ -15,6 +15,7 @@ var app = module.exports = express.createServer();
 var defaultLocale = 'en';
 var pageDB = {};
 var cardCount;
+var cardId;
 
 function initPageDB(){
 	pageDB = {
@@ -119,7 +120,14 @@ function getRandomCardId(){
 	return Math.floor(Math.random() * cardCount + 1);
 }
 
-
+// function getLanguageNav(){
+// 	var nav = '';
+// 	for(var i=0, l=pageDB.nav.length; i<l; i++) {
+// 	 	var lang = pageDB.nav[i];
+// 		nav += '<li><a href="/'+lang.languagecode+'/1">'+lang.language+'</a></li>';
+// 	}
+// 	return nav;
+// }
 
 // set the view engine to use handlebars
 app.set('view engine', 'hbs');
@@ -145,13 +153,20 @@ hbs.registerHelper('list', function(items, fn) {
 
 hbs.registerPartial('link2', '<a href="/people/{{id}}">{{name}}</a>');
 
-hbs.registerHelper('languageNav', function(items, fn) {
-  var out = "<ul>";
-  for(var i=0, l=items.length; i<l; i++) {
-    out = out + "<li>" + fn(items[i]) + "</li>";
-  }
-  return out + "</ul>";
-});
+
+//hbs.registerPartial('languageNav', getLanguageNav());
+
+// hbs.registerHelper('languageNav', function(items, fn) {
+// 	//{{#nav}}<li><a href="/{{languagecode}}/{{../id}}">{{language}}</a></li>{{/nav}}
+// 	console.log('languageNav:------------------');
+// 	console.log(items);
+//   	var out = "";
+//   	// for(var i=0, l=pageDB.nav.length; i<l; i++) {
+//   	// 	var lang = pageDB.nav[i];
+//    //  	out = out + '<li><a href="/'+lang.languagecode+'/'+fn(items[i])+'>'+lang.language+'</a></li>';
+//   	// }
+//   	return out;
+// });
 
 
 
@@ -163,7 +178,8 @@ app.get('/refresh', function(req, res){
 
 app.get('/about', function(req, res){
 	res.render('about', {
-		question_title: "about"
+		question_title: "about",
+		nav: pageDB.nav
 	});
 });
 
@@ -203,7 +219,7 @@ app.get('/demo', function(req, res){
 
 app.get('/:language/:id', function(req, res, next){
 	var language = req.params.language; // check for validity!
-	var id = parseInt(req.params.id,10) // check for validity!
+	var id = cardId = parseInt(req.params.id,10) // check for validity!
 
 	if(isNaN(id)){
 		next();
