@@ -2,10 +2,9 @@ $(document).ready(function() {
     var is_chrome = /chrome/.test( navigator.userAgent.toLowerCase() ); //chrome is still misbehaving sometimes
     var can_historyPush = !!(window.history && history.pushState);
     var url = location.href;
-    console.log(url);
+    //console.log(url);
     var delimiter = (url.charAt(url.length-1) == '/' ) ? '' : '/';
-    console.log(delimiter);
-    //<variable> = <expression> ? <true clause> : <false clause>
+    //console.log(delimiter);
 
     $('html').addClass('run');
     $('#yes').click(function(e){
@@ -31,19 +30,19 @@ $(document).ready(function() {
             if(location.href == url){
                 // user used the back button - let's go back to the question then :)
                 $('.block').removeClass('flip');
-                console.log('user used the back button');
+                //console.log('user used the back button');
             }else if(location.href == url+delimiter+'yes/'){
                 // user used the forward button
                 $('.block').addClass('flip');
                 $('#answer .yes').show();
                 $('#answer .no').hide();
-                console.log('user used the forward button');
+                //console.log('user used the forward button');
             }else if(location.href == url+delimiter+'no/'){
                 // user used the forward button
                 $('.block').addClass('flip');
                 $('#answer .no').show();
                 $('#answer .yes').hide();
-                console.log('user used the forward button');
+                //console.log('user used the forward button');
             }
         });
     }
@@ -77,7 +76,6 @@ $(document).ready(function() {
     })
 
     $("#languages").on("mouseover", "a", function(event) {
-        console.log($(event.currentTarget));
         $(event.currentTarget).focus();
     });
 
