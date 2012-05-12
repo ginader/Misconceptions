@@ -294,7 +294,7 @@ ul#languages li a:focus{
 }
 #about .front{
   height:auto;
-  min-height:650px;
+  /*min-height:650px;*/
 }
 
 ul#team{

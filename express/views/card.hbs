@@ -11,22 +11,33 @@
 	</ul>	
 </div><!-- /header -->
 
-<div class="block panel{{flipped}}{{selection}}{{clear}}"><div class="front" id="question">
+<div class="block panel{{flipped}}{{selection}}"><div class="front" id="question">
 	<h2>{{question}}</h2>
 	{{#if inc_question}}
-    	{{> solar-system-anim}}
+    	<link rel="stylesheet" href="/stylesheets/solar-system.css" />
+		<div class="galaxy">
+			<ol class="system">
+				<li class="sun"><img alt="Sun" width="200%" height="200%" src="/images/img-scale-sun.png" ></li>
+				<li class="mercury"><i><img alt="Mercury" width="50%" height="50%" src="/images/img-scale-mercury.png" ></i></li>
+				<li class="venus"><i><img alt="Venus" width="50%" height="50%" src="/images/img-scale-venus.png" ></i></li>
+				<li class="earth"><i><img alt="Earth" width="50%" height="50%" src="/images/img-scale-earth.png" ></i></li>
+				<li class="mars"><i><img alt="Mars" width="50%" height="50%" src="/images/img-scale-mars.png" ></i></li>
+				<li class="jupiter"><i><img alt="Jupiter" width="50%" height="50%" src="/images/img-scale-jupiter.png" ></i></li>
+				<li class="saturn"><i><img alt="Saturn" width="50%" height="50%" src="/images/img-scale-saturn.png" ></i></li>
+				<li class="uranus"><i><img alt="Uranus" width="50%" height="50%" src="/images/img-scale-uranus.png" ></i></li>
+				<li class="neptune"><i><img alt="Neptune" width="50%" height="50%" src="/images/img-scale-neptune.png" ></i></li>
+			</ol>
+		</div>
   	{{else}}
     	<img src="/images/{{img_question}}" alt="">
   	{{/if}}
 	<p>{{question_text}}</p>
 	<div class="cta">
-<!-- 		<button id="yes">{{yes}}</button>
-		<button id="no">{{no}}</button> -->
 		<a class="button" href="/{{languagecode}}/{{id}}/yes" id="yes">{{yes}}</a>
 		<a class="button" href="/{{languagecode}}/{{id}}/no" id="no">{{no}}</a>
 	</div>
 </div>
-<div class="back" id="answer">
+<div class="back{{clear}}" id="answer">
 	<h2>{{answer}}</h2>
 	{{#if inc_answer}}
     	<link rel="stylesheet" href="/stylesheets/solar-system.css" />
@@ -46,7 +57,7 @@
   	{{else}}
     	<img src="/images/{{img_answer}}" alt="">
   	{{/if}}
-	<p>
+	<p class="{{fill}}">
 		{{#if truth}}
     		<strong class="yes">{{correct}}</strong>
     		<strong class="no">{{wrong}}</strong>

@@ -276,6 +276,10 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 	str.inc_question = card.inc_question;
 	if(card.inc_answer){
 		str.clear = ' clear';
+		str.fill = ' fill';
+	}else{
+		str.clear = undefined;
+		str.fill = undefined;
 	}
 	str.flipped = undefined;
 	str.selection = undefined;
@@ -288,7 +292,7 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 		}
 	}
 
-	console.log('rendering str: ');
+	console.log('rendering card: ');
 	console.log(str);
 
 	res.render('card', str);
@@ -297,7 +301,6 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 app.get('/:language', function(req, res, next){
 	var language = req.params.language; // check for validity!
 	var id = getRandomCardId();
-	//res.send('redirect to myths #'+getRandomCardId()+' in language: '+language, 200);
 	res.redirect('/'+language+'/'+id);
 });
 
