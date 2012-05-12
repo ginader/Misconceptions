@@ -10,7 +10,7 @@ This Trivia is our approach to make people learn while having fun and to make th
 
 ## You can help!
 
-**If you happen to speak a language in which Daily Myths is not yet available** (currently available in: english, german and chinese) then it would be absolutely brilliant if you could add translations! It's easy! Just clone the [github repository](https://github.com/ginader/Misconceptions), duplicate the language folder of a language you know (en or de) and happily translate away! The UI strings live in strings.inc.php and all the myths in their own numbered folders. If you run into issues or have questions simply file an [issue in our tracker](https://github.com/ginader/Misconceptions/issues)
+**If you happen to speak a language in which Daily Myths is not yet available** (currently available in: english, german and chinese) then it would be absolutely brilliant if you could add translations! It's easy! Just have a look into our [google doc](https://docs.google.com/spreadsheet/ccc?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE). It contains all the data that powers the app. If you run into issues or have questions simply file an [issue in our tracker](https://github.com/ginader/Misconceptions/issues)
 
 **If you stumble over a common Myth that people still believe and you feel like you have to change that** then go ahead and add it! We always want people to become more educated :-)
 
@@ -27,6 +27,7 @@ This Trivia is our approach to make people learn while having fun and to make th
 * [![avatar of Matt Harris](http://dailymyths.com/images/matt.jpg)](http://twitter.com/themattharris) Matt Harris [Tech support]
 
 * [![avatar of Dayong Huang](http://dailymyths.com/images/dayongh.jpg)](http://twitter.com/dayongh) Dayong Huang [translator]
+
 
 ## Dependencies 
 
