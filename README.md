@@ -26,7 +26,7 @@ This Trivia is our approach to make people learn while having fun and to make th
 
 * [![avatar of Matt Harris](http://dailymyths.com/images/matt.jpg)](http://twitter.com/themattharris) Matt Harris [Tech support]
 
-* [![avatar of Dayong Huang](http://dailymyths.com/dayongh/matt.jpg)](http://twitter.com/dayongh) Dayong Huang [translator]
+* [![avatar of Dayong Huang](http://dailymyths.com/images/dayongh.jpg)](http://twitter.com/dayongh) Dayong Huang [translator]
 
 ## Dependencies 
 
