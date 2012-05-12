@@ -277,11 +277,13 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 	if(card.inc_answer){
 		str.clear = ' clear';
 	}
+	str.flipped = undefined;
+	str.selection = undefined;
 	if(selection){
 		str.flipped = ' flip';
 		if(selection.toLowerCase() == 'yes'){
 			str.selection = ' yes'
-		}else{
+		}else if(selection.toLowerCase() == 'no'){
 			str.selection = ' no'
 		}
 	}
