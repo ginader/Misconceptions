@@ -292,8 +292,8 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 		}
 	}
 
-	console.log('rendering card: ');
-	console.log(str);
+	//console.log('rendering card: ');
+	//console.log(str);
 
 	res.render('card', str);
 });
