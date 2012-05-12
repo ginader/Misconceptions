@@ -6,8 +6,6 @@ var assert = require('assert');
 var express = require('express');
 var request = require('request');
 var YQL = require('yql');
-
-// local
 var hbs = require('hbs');
 
 var app = module.exports = express.createServer();
@@ -138,38 +136,11 @@ function getRandomCardId(){
 	return Math.floor(Math.random() * cardCount + 1);
 }
 
-// function getLanguageNav(){
-// 	var nav = '';
-// 	for(var i=0, l=pageDB.nav.length; i<l; i++) {
-// 	 	var lang = pageDB.nav[i];
-// 		nav += '<li><a href="/'+lang.languagecode+'/1">'+lang.language+'</a></li>';
-// 	}
-// 	return nav;
-// }
-
 // set the view engine to use handlebars
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 
 app.use(express.static(__dirname + '/public'));
-
-hbs.registerHelper('link_to', function(context) {
-  return "<a href='" + context.url + "'>" + context.body + "</a>";
-});
-
-hbs.registerHelper('link_to2', function(title, context) {
-  return "<a href='/posts" + context.url + "'>" + title + "</a>"
-});
-
-hbs.registerHelper('list', function(items, fn) {
-  var out = "<ul>";
-  for(var i=0, l=items.length; i<l; i++) {
-    out = out + "<li>" + fn(items[i]) + "</li>";
-  }
-  return out + "</ul>";
-});
-
-hbs.registerPartial('link2', '<a href="/people/{{id}}">{{name}}</a>');
 
 
 //hbs.registerPartial('languageNav', getLanguageNav());
@@ -201,39 +172,6 @@ app.get('/about', function(req, res, next){
 	});
 });
 
-app.get('/demo', function(req, res, next){
-  res.render('demo', {
-    title: 'Express Handlebars Test',
-    // basic test
-    name: 'Alan',
-    hometown: "Somewhere, TX",
-    kids: [{"name": "Jimmy", "age": "12"}, {"name": "Sally", "age": "4"}],
-    // path test
-    person: { "name": "Alan" }, company: {"name": "Rad, Inc." },
-    // escapee test
-    escapee: '<jail>escaped</jail>',
-    // helper test
-    posts: [{url: "/hello-world", body: "Hello World!"}],
-    // helper with string
-    posts2: [{url: "/hello-world", body: "Hello World!"}],
-    // for block helper test
-    people: [
-      {firstName: "Yehuda", lastName: "Katz"},
-      {firstName: "Carl", lastName: "Lerche"},
-      {firstName: "Alan", lastName: "Johnson"}
-    ],
-    people2: [
-      { name: { firstName: "Yehuda", lastName: "Katz" } },
-      { name: { firstName: "Carl", lastName: "Lerche" } },
-      { name: { firstName: "Alan", lastName: "Johnson" } }
-    ],
-    // for partial test
-    people3: [
-      { "name": "Alan", "id": 1 },
-      { "name": "Yehuda", "id": 2 }
-    ]
-  });
-});
 
 app.get('/:language/:id/:selection?', function(req, res, next){
 	var language = req.params.language; // check for validity!
