@@ -50,7 +50,7 @@ function getStrings(){
 };
 function getCards(){
 	// get cards
-	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=2&output=csv' and columns='id,truth,question_en,answer_en,link,question_de,answer_de,question_es,answer_es,question_zh,answer_zh'", function(response) {
+	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=2&output=csv' and columns='id,truth,img_question,img_answer,question_en,answer_en,link,question_de,answer_de,question_es,answer_es,question_zh,answer_zh'", function(response) {
 		if (response.error) {
 			console.log("getCards Error: " + response.error.description);
 		} else {
@@ -61,11 +61,13 @@ function getCards(){
 	        cardCount = cards.length-1;
 	        for(var i=1;i<cards.length;i++){
 	        	var card = cards[i];
-	        	console.log(card);
+	        	//console.log(card);
 	        	pageDB.cards[card.id] = {
 	        		id : card.id,
 	        		truth : (card.truth.toLowerCase() == 'true'),
-	        		link : card.link
+	        		link : card.link,
+	        		img_question : card.img_question,
+	        		img_answer : card.img_answer
 	        	}
 	        	// only store the strings for the activated languages
 	        	for (var lang in pageDB.languages){
@@ -74,11 +76,27 @@ function getCards(){
 	        			answer : card['answer_'+lang]
 	        		}
 	        	}
+	        	// add exception for includes instead of images
+	        	if(fileExt(card.img_question) == 'hbs'){
+	        		pageDB.cards[card.id].img_question = undefined;
+	        		pageDB.cards[card.id].inc_question = card.img_question;
+	        	}
+	        	if(fileExt(card.img_answer) == 'hbs'){
+	        		pageDB.cards[card.id].img_answer = undefined;
+	        		pageDB.cards[card.id].inc_answer = card.img_answer;
+	        	}
+
+
 	        }
-	        console.log(pageDB);
+	        //console.log(pageDB);
 		}
 	});
 };
+
+function fileExt(fileName){
+	var ext = fileName.substr(fileName.lastIndexOf('.') + 1);
+	return ext;
+}
 
 // https://github.com/mashpie/i18n-node/blob/master/i18n.js
 function guessLanguage(request) {
@@ -170,20 +188,20 @@ hbs.registerPartial('link2', '<a href="/people/{{id}}">{{name}}</a>');
 
 
 
-app.get('/refresh', function(req, res){
+app.get('/refresh', function(req, res, next){
   	initPageDB();
   	getStrings();
   	res.send("refreshing - isn't it? ;-)", 200);
 });
 
-app.get('/about', function(req, res){
+app.get('/about', function(req, res, next){
 	res.render('about', {
 		question_title: "about",
 		nav: pageDB.nav
 	});
 });
 
-app.get('/demo', function(req, res){
+app.get('/demo', function(req, res, next){
   res.render('demo', {
     title: 'Express Handlebars Test',
     // basic test
@@ -217,9 +235,10 @@ app.get('/demo', function(req, res){
   });
 });
 
-app.get('/:language/:id', function(req, res, next){
+app.get('/:language/:id/:selection?', function(req, res, next){
 	var language = req.params.language; // check for validity!
 	var id = cardId = parseInt(req.params.id,10) // check for validity!
+	var selection = req.params.selection; // either "yes" or 'no'
 
 	if(isNaN(id)){
 		next();
@@ -239,6 +258,11 @@ app.get('/:language/:id', function(req, res, next){
 
 	card_str = card[language];
 
+
+	if(!str){
+		return; //this route seems to get processed twice with str being undefined the 2nd time
+	}
+
 	str.id = card.id;
 	str.truth = card.truth;
 	str.link = card.link;
@@ -246,8 +270,23 @@ app.get('/:language/:id', function(req, res, next){
 	str.answer_text = card_str.answer;
 	str.nav = pageDB.nav;
 	str.nextId = nextId;
+	str.img_question = card.img_question;
+	str.img_answer = card.img_answer;
+	str.inc_answer = card.inc_answer;
+	str.inc_question = card.inc_question;
+	if(card.inc_answer){
+		str.clear = ' clear';
+	}
+	if(selection){
+		str.flipped = ' flip';
+		if(selection.toLowerCase() == 'yes'){
+			str.selection = ' yes'
+		}else{
+			str.selection = ' no'
+		}
+	}
 
-	console.log('str: ');
+	console.log('rendering str: ');
 	console.log(str);
 
 	res.render('card', str);
@@ -260,13 +299,13 @@ app.get('/:language', function(req, res, next){
 	res.redirect('/'+language+'/'+id);
 });
 
-app.get('/', function(req, res){
+app.get('/', function(req, res, next){
 	guessLanguage(req)
 	var language = req.language
 	res.redirect('/'+language);
 });
 
-app.get('*', function(req, res){
+app.get('*', function(req, res, next){
   res.send('ummm what?', 404);
 });
 

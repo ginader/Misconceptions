@@ -25,3 +25,24 @@ This Trivia is our approach to make people learn while having fun and to make th
 * [![avatar of Cotta Ginader](http://dailymyths.org/assets/img/cotta.jpg)](http://twitter.com/kurzkeks) Cotta Ginader [Researcher]
 
 * [![avatar of Matt Harris](http://dailymyths.org/assets/img/matt.jpg)](http://twitter.com/themattharris) Matt Harris [Tech support]
+
+## Dependencies 
+
+ubuntu  
+`$ sudo apt-get install nodejs npm`
+
+others  
+<http://nodejs.org/#download>
+
+`$ npm install -g express`  
+<http://expressjs.com/>
+
+`$ npm install hbs`  
+<https://github.com/donpark/hbs>
+
+`$ npm install yql`  
+<https://github.com/derek/node-yql>
+
+
+
+

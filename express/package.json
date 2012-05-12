@@ -1,9 +1,10 @@
 {
-    "name": "application-name"
-  , "version": "0.0.1"
+    "name": "daily myths"
+  , "version": "2.0.1"
   , "private": true
   , "dependencies": {
       "express": "2.5.8"
-    , "jade": ">= 0.0.1"
+    , "hbs": ">= 1.0.0"
+    , "yql": ">= 0.4.7"
   }
 }
