@@ -2,17 +2,21 @@ $(document).ready(function() {
     var is_chrome = /chrome/.test( navigator.userAgent.toLowerCase() ); //chrome is still misbehaving sometimes
 
     $('html').addClass('run');
-    $('#yes').click(function(){
+    $('#yes').click(function(e){
+        e.preventDefault();
         $('#answer .yes').show();
         $('#answer .no').hide();       
 
     });
-    $('#no').click(function(){
+    $('#no').click(function(e){
+        e.preventDefault();
         $('#answer .no').show();
         $('#answer .yes').hide();
     });
 
-    $('#yes, #no').click(function(){
+    $('#yes, #no').click(function(e){
+        e.preventDefault();
+        $('.block').addClass('flip');
         setTimeout(function(){
             $('#answer .galaxy').show();
             if(is_chrome){
@@ -22,9 +26,7 @@ $(document).ready(function() {
         }, 500);
     });
 
-    $('.block .cta button').click(function(){
-        $('.block').addClass('flip');
-    });
+
     $('.block .back h2').click(function(e){
         $('.block').removeClass('flip');
         e.preventDefault();
