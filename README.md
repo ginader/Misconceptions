@@ -10,21 +10,23 @@ This Trivia is our approach to make people learn while having fun and to make th
 
 ## You can help!
 
-**If you happen to speak a language in which Daily Myths is not yet available** (currently available in: english, german) then it would be absolutely brilliant if you could add translations! It's easy! Just clone the [github repository](https://github.com/ginader/Misconceptions), duplicate the language folder of a language you know (en or de) and happily translate away! The UI strings live in strings.inc.php and all the myths in their own numbered folders. If you run into issues or have questions simply file an [issue in our tracker](https://github.com/ginader/Misconceptions/issues)
+**If you happen to speak a language in which Daily Myths is not yet available** (currently available in: english, german and chinese) then it would be absolutely brilliant if you could add translations! It's easy! Just clone the [github repository](https://github.com/ginader/Misconceptions), duplicate the language folder of a language you know (en or de) and happily translate away! The UI strings live in strings.inc.php and all the myths in their own numbered folders. If you run into issues or have questions simply file an [issue in our tracker](https://github.com/ginader/Misconceptions/issues)
 
 **If you stumble over a common Myth that people still believe and you feel like you have to change that** then go ahead and add it! We always want people to become more educated :-)
 
 ## The Team
 
-* [![avatar of Cindy Li](http://dailymyths.org/assets/img/cindyli.jpg)](http://twitter.com/cindyli) Cindy Li [design]
+* [![avatar of Cindy Li](http://dailymyths.com/images/cindyli.jpg)](http://twitter.com/cindyli) Cindy Li [design]
 
-* [![avatar of Dirk Ginader](http://dailymyths.org/assets/img/ginader.png)](http://twitter.com/ginader) Dirk Ginader [developer]
+* [![avatar of Dirk Ginader](http://dailymyths.com/images/ginader.png)](http://twitter.com/ginader) Dirk Ginader [developer]
 
-* [![avatar of Amit Rao](http://dailymyths.org/assets/img/amirao.jpg)](http://twitter.com/amitmrao) Amit Rao [developer (moon phases)]
+* [![avatar of Amit Rao](http://dailymyths.com/images/amirao.jpg)](http://twitter.com/amitmrao) Amit Rao [developer (moon phases)]
 
-* [![avatar of Cotta Ginader](http://dailymyths.org/assets/img/cotta.jpg)](http://twitter.com/kurzkeks) Cotta Ginader [Researcher]
+* [![avatar of Cotta Ginader](http://dailymyths.com/images/cotta.jpg)](http://twitter.com/kurzkeks) Cotta Ginader [Researcher]
 
-* [![avatar of Matt Harris](http://dailymyths.org/assets/img/matt.jpg)](http://twitter.com/themattharris) Matt Harris [Tech support]
+* [![avatar of Matt Harris](http://dailymyths.com/images/matt.jpg)](http://twitter.com/themattharris) Matt Harris [Tech support]
+
+* [![avatar of Dayong Huang](http://dailymyths.com/dayongh/matt.jpg)](http://twitter.com/dayongh) Dayong Huang [translator]
 
 ## Dependencies 
 
