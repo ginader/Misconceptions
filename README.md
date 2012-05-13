@@ -14,6 +14,16 @@ This Trivia is our approach to make people learn while having fun and to make th
 
 **If you stumble over a common Myth that people still believe and you feel like you have to change that** then go ahead and add it! We always want people to become more educated :-)
 
+## The Translations
+The Questions and Answers and all of their Translations live in our [google doc](https://docs.google.com/spreadsheet/ccc?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE). To visibly show the state of the different Translations we have a color code:
+
+* A Text that is missing or outdated in a language is marked with a red background color in the respective column
+* A Question that needs rework is marked pink in the whole row
+* Any new Myth (row) is marked in green.
+* Any row that is fine as it is is just plain white
+* New Myths need to be added in english as common denominator so it can be translated
+
+
 ## The Team
 
 * [![avatar of Cindy Li](http://dailymyths.com/images/cindyli.jpg)](http://twitter.com/cindyli) Cindy Li [design]
