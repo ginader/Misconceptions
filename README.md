@@ -36,7 +36,9 @@ The Questions and Answers and all of their Translations live in our [google doc]
 
 * [![avatar of Matt Harris](http://dailymyths.com/images/matt.jpg)](http://twitter.com/themattharris) Matt Harris [Tech support]
 
-* [![avatar of Dayong Huang](http://dailymyths.com/images/dayongh.jpg)](http://twitter.com/dayongh) Dayong Huang [translator]
+* [![avatar of Dayong Huang](http://dailymyths.com/images/dayongh.jpg)](http://twitter.com/dayongh) Dayong Huang [translator Chinese]
+
+* [![avatar of Adel Shehadeh](http://dailymyths.com/images/adelshehadeh.jpg)](http://twitter.com/adelshehadeh) Adel Shehadeh [translator Arabic]
 
 
 ## Dependencies 
