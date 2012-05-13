@@ -328,8 +328,9 @@ and (max-device-width : 480px) {
       min-height: 1100px;
       width: 100%
   }
-  #about{
-      min-height: 1100px;
+  #about.panel{
+      min-height: 1300px;
+      width: 100%
   }
 }
 

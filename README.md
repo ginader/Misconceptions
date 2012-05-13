@@ -1,6 +1,6 @@
 # [Daily Myths](http://dailymyths.org/)
 
-This project was built in 48 hours during the [International Space Apps Challenge](http://spaceappschallenge.org/) on 21-22 April 2012 in San Francisco. **It won the Award for Education outreach!**
+This project was built in 24 hours during the [International Space Apps Challenge](http://spaceappschallenge.org/) on 21-22 April 2012 in San Francisco. **It won the Award for Education outreach!**
 
 The idea for it came out of the Challenge called: [Visualize the "All-too-Common Astronomy/Solar System Misconceptions](http://spaceappschallenge.org/challenge/visualize-all-too-common-astronomysolar-system-mis/). 
 
