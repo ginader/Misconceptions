@@ -16,6 +16,10 @@ body{
             background-size: cover;
   text-align:center;
 }
+body.clipped{
+  /* to fix the appearing scrollbar/jumping page  when flipping on systems that hide the scrollbar*/
+  overflow:hidden;
+}
 
 #header{
 	background-color: #000;
@@ -64,7 +68,7 @@ h1{
 .panel {
   width: 400px;
   min-height: 550px;
-  margin:0px auto 5em;
+  margin:0px auto;
   position: relative;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
