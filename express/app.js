@@ -35,10 +35,10 @@ function getStrings(){
 	        var languages = response.query.results.row;
 	        for(var i=1;i<languages.length;i++){
 	        	var lang = languages[i];
-	        	//if(lang.active.toUpperCase() =='TRUE'){ // is there any way to get this as BOOL from gdocs?
+	        	if(lang.active.toUpperCase() =='TRUE'){ // is there any way to get this as BOOL from gdocs?
 	        		pageDB.languages[lang.languagecode] = lang;
 	        		pageDB.nav.push(lang);
-	        	//}
+	        	}
 	        }
 	        //console.log('languages added: ---------------------------');
 	        //console.log(pageDB);
