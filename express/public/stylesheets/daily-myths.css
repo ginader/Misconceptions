@@ -261,6 +261,12 @@ h1{
 	background: linear-gradient(bottom,  #5b5b5b 0%,#585858 9%,#4d4d4d 27%,#282828 75%,#1a1a1a 100%);
 	
 }
+.rtl .front,
+.rtl .back,
+div[dir=rtl]{
+  text-align:right;
+  direction: rtl;
+}
 
 ul#languages{
   display: none;

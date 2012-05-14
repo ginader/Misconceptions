@@ -35,10 +35,10 @@ function getStrings(){
 	        var languages = response.query.results.row;
 	        for(var i=1;i<languages.length;i++){
 	        	var lang = languages[i];
-	        	if(lang.active.toUpperCase() =='TRUE'){ // is there any way to get this as BOOL from gdocs?
+	        	//if(lang.active.toUpperCase() =='TRUE'){ // is there any way to get this as BOOL from gdocs?
 	        		pageDB.languages[lang.languagecode] = lang;
 	        		pageDB.nav.push(lang);
-	        	}
+	        	//}
 	        }
 	        //console.log('languages added: ---------------------------');
 	        //console.log(pageDB);
@@ -177,6 +177,7 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 	var language = req.params.language; // check for validity!
 	var id = cardId = parseInt(req.params.id,10) // check for validity!
 	var selection = req.params.selection; // either "yes" or 'no'
+	var isRTL = ['ar'];
 
 	if(isNaN(id)){
 		next();
@@ -228,6 +229,12 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 		}else if(selection.toLowerCase() == 'no'){
 			str.selection = ' no'
 		}
+	}
+
+	if(isRTL.indexOf(language) > -1){
+		str.dir = 'rtl';
+	}else{
+		str.dir = 'ltr';
 	}
 
 	//console.log('rendering card: ');
