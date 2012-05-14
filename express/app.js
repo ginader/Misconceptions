@@ -141,6 +141,7 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 
 app.use(express.static(__dirname + '/public'));
+app.use(express.favicon(__dirname + '/public/images/favicon.ico', { maxAge: 2592000000 })); 
 
 
 //hbs.registerPartial('languageNav', getLanguageNav());
@@ -223,11 +224,12 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 	str.flipped = undefined;
 	str.selection = undefined;
 	if(selection){
-		str.flipped = ' flip';
+		str.urlselection = 'urlselection';
+		str.flipped = 'flip';
 		if(selection.toLowerCase() == 'yes'){
-			str.selection = ' yes'
+			str.selection = 'yes'
 		}else if(selection.toLowerCase() == 'no'){
-			str.selection = ' no'
+			str.selection = 'no'
 		}
 	}
 
