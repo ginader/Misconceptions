@@ -57,7 +57,13 @@
 			</ol>
 		</div>
   	{{else}}
+  		{{#if moonphases}}
+  			<a target="_blank" href="/MoonPhases/MoonPhases.html">
+  		{{/if}}
     	<img src="/images/{{img_answer}}" alt="">
+    	{{#if moonphases}}
+    		</a>
+    	{{/if}}
   	{{/if}}
 	<p class="{{fill}}">
 		{{#if truth}}

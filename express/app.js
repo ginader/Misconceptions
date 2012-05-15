@@ -239,6 +239,14 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 		str.dir = 'ltr';
 	}
 
+	/* exception for the moon phases*/
+
+	if(card.id == 20){
+		str.moonphases = true;
+	}else{
+		str.moonphases = undefined;
+	}
+
 	//console.log('rendering card: ');
 	//console.log(str);
 
