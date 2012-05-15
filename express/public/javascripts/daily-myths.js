@@ -61,8 +61,9 @@ $(document).ready(function() {
     $('#yes, #no').click(function(e){
         e.preventDefault();
         $('.block').addClass('flip');
+        $('#answer h2').attr('tabindex','-1').focus();
         setTimeout(function(){
-            $('#answer .galaxy').show();
+            $('#answer .galaxy').attr('tabindex','-1').show();
             if(is_chrome){
                 $('#answer .galaxy').css('-webkit-perspective','none');
                 // removing perspective fixes the issue when Chrome does not show the solar system ani at all
@@ -76,6 +77,7 @@ $(document).ready(function() {
             history.pushState(null, null, url+languagecode+'/'+id+'/');
         }
         $('.block').removeClass('flip');
+        $('#question h2').attr('tabindex','-1').focus();
         e.preventDefault();
     });
 
@@ -83,7 +85,7 @@ $(document).ready(function() {
     $('#language-nav>a').click(function(event){
         event.preventDefault();
         $(this).parent().toggleClass('open')
-        .find('ul a:first').focus();
+        .find('ul a[href="/'+languagecode+'/'+id+'"]').focus();
     })
 
     $("#languages").on("mouseover", "a", function(event) {

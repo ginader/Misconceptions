@@ -256,7 +256,9 @@ h1{
   margin-left:auto;
 }
 .panel button:hover,
-.panel a.button:hover{
+.panel button:focus,
+.panel a.button:hover,
+.panel a.button:focus{
 	background: -moz-linear-gradient(bottom,  #5b5b5b 0%, #585858 9%, #4d4d4d 27%, #282828 75%, #1a1a1a 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b5b5b), color-stop(9%,#585858), color-stop(27%,#4d4d4d), color-stop(75%,#282828), color-stop(100%,#1a1a1a));
 	background: -webkit-linear-gradient(bottom,  #5b5b5b 0%,#585858 9%,#4d4d4d 27%,#282828 75%,#1a1a1a 100%);
