@@ -22,28 +22,24 @@
         var map = new google.maps.Map(document.getElementById("map_canvas"),
             myOptions);
  
-				
 		
 	    var contentStringN = '<div id="content">'+
 			        '<div id="siteNotice">'+
 			        '</div>'+	
 			        '<h1 id="firstHeading" class="firstHeading">Lunar Libration</h1>'+
 			        '<div id="bodyContent">'+
-				    '<p> In astronomy, libration is an oscillating motion of orbiting bodies relative to each other, ' +
-				    'notably including the motion of the Moon relative to Earth, or of Trojan asteroids relative to planets.'+
-					'Libration is manifested as a slow rocking back and forth of the Moon as viewed from Earth, permitting an observer'+
-					'to see slightly different halves of the surface at different times.' +
+				    '<p> The Moon generally has one hemisphere facing the Earth, due to tidal locking. ' +
+					'Libration is manifested as a slow rocking back and forth of the Moon as viewed from Earth,'+
+					' permitting an observer to see slightly different halves of the surface at different times. '+ 
 				    '<p>Attribution: Lunar Libration, <a href="http://en.wikipedia.org/wiki/Libration">'+
-				    'http://en.wikipedia.org/wiki/Libration</a></p>'+
-				    '<p><a href="http://sciencenetlinks.com/interactives/moon/moon_challenge/moon_challenge.html">Play this moon challenge</a></p>' +
-				    'This page was last modified on 13 April 2012 at 10:18.'+ 
+				    'http://en.wikipedia.org/wiki/Libration</a>,</p>'+
+				    '<p><a href="http://sciencenetlinks.com/interactives/moon/moon_challenge/moon_challenge.html"> Try out this moon quiz.</a></p>'+
+				    'This page was last modified on 22 April 2012 at 14:48.'+ 
 					'</div>'+
 				    '</div>';		
 				
 				
 		var moonNorth = 'images/LunarLibration.gif';
-		 
-		
 								
 		var infowindowN = new google.maps.InfoWindow({
 			        content: contentStringN
@@ -57,16 +53,13 @@
 	        title: 'Lunar Phases'
 	    });
 
-       
 		
 	
 	    google.maps.event.addListener(markerN, 'click', function() {
 	      infowindowN.open(map,markerN);
 	    });
 	 
-		
-		
-
+	
 
       }
     </script>
