@@ -1,5 +1,5 @@
 function clipPage(){    
-    if($(window).height() > $('body').height()){
+    if($(window).height() > $('body').height() && $('#about').length == 0){
         $('body').addClass('clipped');
     }else{
         $('body').removeClass('clipped');
