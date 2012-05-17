@@ -40,6 +40,8 @@ The Questions and Answers and all of their Translations live in our [google doc]
 
 * [![avatar of Adel Shehadeh](http://dailymyths.com/images/adelshehadeh.jpg)](http://twitter.com/adelshehadeh) Adel Shehadeh [translator Arabic]
 
+* [![avatar of Marcela Benitez](http://dailymyths.com/images/marssy.jpg)](http://twitter.com/marssy) Marcela Benitez [translator Spanish]
+
 
 ## Dependencies 
 
