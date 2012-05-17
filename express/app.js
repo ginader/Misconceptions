@@ -256,6 +256,13 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 app.get('/:language', function(req, res, next){
 	var language = req.params.language; // check for validity!
 	var id = getRandomCardId();
+
+	if(!isNaN(language)){
+		// it's a number! Let's show the given id in the user language
+		guessLanguage(req)
+		id = language;
+		language = req.language;
+	}
 	res.redirect('/'+language+'/'+id);
 });
 
