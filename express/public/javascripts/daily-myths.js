@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     if(can_historyPush){
         $(window).bind('popstate', function(e){
-            console.log(location.href);
+            //console.log(location.href);
             if(location.href == url+languagecode+'/'+id+'/'){
                 // user used the back button - let's go back to the question then :)
                 $('.block').removeClass('flip');
