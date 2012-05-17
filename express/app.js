@@ -184,6 +184,15 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 		next();
 	}
 
+	if(id > cardCount){
+		// we don't have that id. Let's use a random valid one instead
+		id = getRandomCardId();
+		if (!selection){
+			selection = '';
+		}
+		res.redirect('/'+language+'/'+id+'/'+selection);
+	}
+
 	var nextId = id+1;
 	if(nextId > cardCount){
 		nextId = 1;
