@@ -25,7 +25,7 @@ function initPageDB(){
 
 function getStrings(){
 	// get cards
-	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=3&output=csv' and columns='languagecode,language,active,question,answer,yes,no,next,wrong,correct,more'", function(response) {
+	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=3&output=csv' and columns='languagecode,language,language_en,rtl,active,question,answer,yes,no,next,wrong,correct,more'", function(response) {
 		if (response.error) {
 			console.log("getStrings Error: " + response.error.description);
 		} else {
@@ -48,7 +48,7 @@ function getStrings(){
 };
 function getCards(){
 	// get cards
-	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=2&output=csv' and columns='id,active,truth,img_question,img_answer,question_en,answer_en,link,question_hi,answer_hi,question_ar,answer_ar,question_de,answer_de,question_es,answer_es,question_zh,answer_zh'", function(response) {
+	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=2&output=csv' and columns='id,active,truth,img_question,img_answer,question_en,answer_en,link,question_hi,answer_hi,question_ar,answer_ar,question_de,answer_de,question_es,answer_es,question_zh,answer_zh,question_fr,answer_fr'", function(response) {
 		if (response.error) {
 			console.log("getCards Error: " + response.error.description);
 		} else {
@@ -256,8 +256,8 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 		str.moonphases = undefined;
 	}
 
-	//console.log('rendering card: ');
-	//console.log(str);
+	console.log('rendering card: ');
+	console.log(str);
 
 	res.render('card', str);
 });
