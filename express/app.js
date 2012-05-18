@@ -256,8 +256,8 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 		str.moonphases = undefined;
 	}
 
-	console.log('rendering card: ');
-	console.log(str);
+	//console.log('rendering card: ');
+	//console.log(str);
 
 	res.render('card', str);
 });
