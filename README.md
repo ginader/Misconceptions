@@ -24,7 +24,8 @@ The Questions and Answers and all of their Translations live in our [google doc]
 * New Myths need to be added in english as common denominator so it can be translated
 
 ## Licence
-Creative Common (http://creativecommons.org/licenses/by-nc-sa/2.5/legalcode)
+Apache 2.0 License 
+GNU General Public License
 
 ## The Team
 
