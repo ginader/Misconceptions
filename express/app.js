@@ -158,6 +158,19 @@ app.use(express.favicon(__dirname + '/public/images/favicon.ico', { maxAge: 2592
 //   	return out;
 // });
 
+hbs.registerHelper('csv', function(items, options) {
+	var out = "";
+	for(var i=0, l=items.length; i<l; i++) {
+		out += options.fn(items[i]);
+		if (i < l - 1) {
+	    	out += ', ';
+		}
+	} 
+	return out;
+});
+// template:
+//{{#csv list}}{{item}}{{/csv}}
+
 
 
 app.get('/refresh', function(req, res, next){
