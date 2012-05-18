@@ -13,8 +13,9 @@
     <script type="text/javascript">
       function initialize() {
 	    var myLatlng = new google.maps.LatLng(0, 0);
-	    var northLatlng = new google.maps.LatLng(85,0);
-		var southLatlng = new google.maps.LatLng(-85,0);
+	    var northLatlng = new google.maps.LatLng(82,0);
+            var southLatlng = new google.maps.LatLng(-87,0);
+
         var myOptions = {
           center: myLatlng,
           zoom: 1,
@@ -55,9 +56,9 @@
 				    '</div>';		
 				
 				
-		var moonNorth = '/images/moon-phases-northern.gif';
+		var moonNorth = '../images/moon-phases-northern.gif';
 		 
-		var moonSouth = '/images/moon-phases-southern.gif';
+		var moonSouth = '../images/moon-phases-southern.gif';
 		
 								
 		var infowindowN = new google.maps.InfoWindow({
