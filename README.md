@@ -23,6 +23,8 @@ The Questions and Answers and all of their Translations live in our [google doc]
 * Any row that is fine as it is is just plain white
 * New Myths need to be added in english as common denominator so it can be translated
 
+## Licence
+Creative Common (http://creativecommons.org/licenses/by-nc-sa/2.5/legalcode)
 
 ## The Team
 
