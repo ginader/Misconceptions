@@ -12,24 +12,72 @@ var app = module.exports = express.createServer();
 
 var defaultLocale = 'en';
 var pageDB = {};
-var cardCount;
 var cardId;
 
-function initPageDB(){
+function initPageDB(forceRefresh){
+	console.log('initializing...');
+	if(forceRefresh){
+		RefreshCache();
+		return;
+	}
+	pageDB = loadCache();
+	if(pageDB){
+		initDone();
+	}else{
+		RefreshCache();
+	}
+}
+
+function initDone(){
+	console.log('init done');
+	//console.log(pageDB);
+}
+
+function loadCache(){
+	console.log('loading cache...');
+	var pageDBcache;
+
+	try {
+		var data = fs.readFileSync('./pagedb.cache.json');
+		//console.log(data);
+		try {
+			pageDBcache = JSON.parse(data);
+			//console.dir(pageDBcache);
+			return pageDBcache;
+		}
+		catch (err) {
+			console.log('There has been an error parsing the pageDBcache JSON')
+			console.log(err);
+			return false;
+		}
+	}
+	catch (err) {
+		console.error("There was an error opening pagedb.cache.json");
+		console.log(err);
+	}
+
+
+	//getStrings();
+}
+
+function RefreshCache(){
+	console.log('refreshing cache');
 	pageDB = {
 		nav : [],
 		languages : {},
 		cards : []
 	};
+
+	getStrings();
 }
 
 function getStrings(){
-	// get cards
+	console.log('loading strings...');
 	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=3&output=csv' and columns='languagecode,language,language_en,rtl,active,question,answer,yes,no,next,wrong,correct,more'", function(response) {
 		if (response.error) {
 			console.log("getStrings Error: " + response.error.description);
 		} else {
-	        console.log("getStrings success: ---------------------------");
+	        console.log("getStrings success");
 	        //console.log(response);
 	        //console.log(response.query.results);
 	        var languages = response.query.results.row;
@@ -42,21 +90,28 @@ function getStrings(){
 	        }
 	        //console.log('languages added: ---------------------------');
 	        //console.log(pageDB);
+
+			console.log('saving strings.cache.json ...');
+	        fs.writeFile('strings.cache.json', JSON.stringify(response.query.results, null, 4), function (err) {
+				if (err) return console.log(err);
+				console.log('strings.cache.json saved');
+			});
+
 	        getCards();
 		}
 	});
 };
 function getCards(){
-	// get cards
+	console.log('loading cards...');
 	new YQL.exec("select * from csv where url='https://docs.google.com/spreadsheet/pub?key=0Ar3qBZOJQ4WBdDk3ajRQTzdKdGNTZnptR3lNYWZkMlE&single=true&gid=2&output=csv' and columns='id,question_en,answer_en,active,truth,img_question,img_answer,link,question_hi,answer_hi,question_ar,answer_ar,question_de,answer_de,question_es,answer_es,question_zh,answer_zh,question_fr,answer_fr,question_nl,answer_nl,question_vi,answer_vi'", function(response) {
 		if (response.error) {
 			console.log("getCards Error: " + response.error.description);
 		} else {
-	        console.log("getCards success: ---------------------------");
+	        console.log("getCards success");
 	        //console.log(response);
 	        //console.log(response.query.results);
 	        var cards = response.query.results.row;
-	        cardCount = cards.length-1;
+	        pageDB.cardCount = cards.length-1;
 	        for(var i=1;i<cards.length;i++){
 	        	var card = cards[i];
 	        	//console.log(card);
@@ -86,10 +141,26 @@ function getCards(){
 
 
 	        }
+			console.log('saving cards.cache.json ...');
+        	fs.writeFile('cards.cache.json', JSON.stringify(response.query.results, null, 4), function (err) {
+				if (err) return console.log(err);
+				console.log('cards.cache.json saved');
+			});
 	        //console.log(pageDB);
+	        savePageDB();
 		}
 	});
 };
+
+function savePageDB(){
+	console.log('saving pageDB');
+    fs.writeFile('pagedb.cache.json', JSON.stringify(pageDB, null, 4), function (err) {
+		if (err) return console.log(err);
+		console.log('pagedb.cache.json saved');
+		console.log('cache refresh finished successfully');
+		initDone();
+	});
+}
 
 function fileExt(fileName){
 	var ext = fileName.substr(fileName.lastIndexOf('.') + 1);
@@ -133,7 +204,7 @@ function guessLanguage(request) {
 }
 
 function getRandomCardId(){
-	return Math.floor(Math.random() * cardCount + 1);
+	return Math.floor(Math.random() * pageDB.cardCount + 1);
 }
 
 // set the view engine to use handlebars
@@ -174,12 +245,14 @@ hbs.registerHelper('csv', function(items, options) {
 
 
 app.get('/refresh', function(req, res, next){
+	console.log('page: /refresh');
   	initPageDB();
   	getStrings();
   	res.send("refreshing - isn't it? ;-)", 200);
 });
 
 app.get('/about', function(req, res, next){
+	//console.log('page: /about');
 	res.render('about', {
 		question_title: "about",
 		nav: pageDB.nav
@@ -188,6 +261,7 @@ app.get('/about', function(req, res, next){
 
 
 app.get('/:language/:id/:selection?', function(req, res, next){
+	//console.log('page: /:language/:id/:selection?');
 	var language = req.params.language; // check for validity!
 	var id = cardId = parseInt(req.params.id,10) // check for validity!
 	var selection = req.params.selection; // either "yes" or 'no'
@@ -197,7 +271,7 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 		next();
 	}
 
-	if(id > cardCount){
+	if(id > pageDB.cardCount){
 		// we don't have that id. Let's use a random valid one instead
 		id = getRandomCardId();
 		if (!selection){
@@ -207,7 +281,7 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 	}
 
 	var nextId = id+1;
-	if(nextId > cardCount){
+	if(nextId > pageDB.cardCount){
 		nextId = 1;
 	}
 
@@ -276,6 +350,7 @@ app.get('/:language/:id/:selection?', function(req, res, next){
 });
 
 app.get('/:language', function(req, res, next){
+	//console.log('page /:language');
 	var language = req.params.language; // check for validity!
 	var id = getRandomCardId();
 
@@ -289,18 +364,21 @@ app.get('/:language', function(req, res, next){
 });
 
 app.get('/', function(req, res, next){
+	//console.log('page: /');
 	guessLanguage(req)
 	var language = req.language
 	res.redirect('/'+language);
 });
 
 app.get('*', function(req, res, next){
-  res.send('ummm what?', 404);
+	console.log('error page');
+  	res.send('ummm what?', 404);
 });
 
 
-app.listen(3000, function(){
+var PORT = process.env.PORT || 3000;
+var REFRESH = process.env.REFRESH || false;
+app.listen(PORT, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
-  initPageDB();
-  getStrings();
+  initPageDB(REFRESH);
 });
