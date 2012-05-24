@@ -45,6 +45,8 @@ GNU General Public License
 
 * [![avatar of Marcela Benitez](http://dailymyths.com/images/marssy.jpg)](http://twitter.com/marssy) Marcela Benitez [translator Spanish]
 
+* ![avatar of Hill Nguyen](http://dailymyths.com/images/hilln.jpg) Hill Nguyen [translator Vietnamese]
+
 
 ## Dependencies 
 
