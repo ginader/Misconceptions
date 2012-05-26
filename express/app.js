@@ -86,6 +86,7 @@ function getStrings(){
 	        	if(lang.active.toUpperCase() =='TRUE'){ // is there any way to get this as BOOL from gdocs?
 	        		pageDB.languages[lang.languagecode] = lang;
 	        		pageDB.nav.push(lang);
+	        		console.log('pushing: '+lang.languagecode);
 	        	}
 	        }
 	        //console.log('languages added: ---------------------------');
@@ -246,8 +247,7 @@ hbs.registerHelper('csv', function(items, options) {
 
 app.get('/refresh', function(req, res, next){
 	console.log('page: /refresh');
-  	initPageDB();
-  	getStrings();
+  	RefreshCache();
   	res.send("refreshing - isn't it? ;-)", 200);
 });
 
