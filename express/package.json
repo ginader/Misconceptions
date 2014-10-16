@@ -1,13 +1,13 @@
 {
     "name": "dailymyths",
     "subdomain": "dailymyths",
-	"domains": [
-		"dailymyths.com",
-		"www.dailymyths.com",
-		"dailymyths.org",
-		"www.dailymyths.org"
-	],
-    "version": "2.0.1-1",
+    "domains": [
+        "dailymyths.com",
+        "www.dailymyths.com",
+        "dailymyths.org",
+        "www.dailymyths.org"
+    ],
+    "version": "2.0.1-3",
     "private": true,
     "dependencies": {
         "express": "2.5.8",
