@@ -57,10 +57,11 @@
 		</div>
   	{{else}}
   		{{#if moonphases}}
-  			<a target="_blank" href="/MoonPhases/MoonPhases.html">
+  			<a href="/MoonPhases/MoonPhases.html">
   		{{/if}}
     	<img src="/images/{{img_answer}}" alt="">
     	{{#if moonphases}}
+    		<span class="external-window">(Opens a new window)</span>
     		</a>
     	{{/if}}
   	{{/if}}
@@ -76,7 +77,7 @@
 		{{answer_text}}
 	</p>
 	<div class="cta">
-		<a target="_blank" class="button" href="{{link}}" id="more">{{more}}</a>
+		<a class="button" href="{{link}}" id="more">{{more}}</a>
 		<a class="button" href="/{{languagecode}}/{{nextId}}" id="next">{{next}}</a>
 	<div>
 </div>
