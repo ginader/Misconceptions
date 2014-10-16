@@ -259,6 +259,14 @@ app.get('/about', function(req, res, next){
 	});
 });
 
+app.get('/language', function(req, res, next){
+	//console.log('page: /about');
+	res.render('language', {
+		question_title: "language",
+		nav: pageDB.nav
+	});
+});
+
 
 app.get('/:language/:id/:selection?', function(req, res, next){
 	//console.log('page: /:language/:id/:selection?');

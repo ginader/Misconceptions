@@ -1,0 +1,22 @@
+<div id="header">
+	<h1><a href="/">Daily Myths</a></h1>
+	<ul class="nav">
+		<li><a href="/about/">about</a></li>
+		<li id="language-nav" class="open_">
+			<a href="/language">change language</a>
+			
+		</li>
+	</ul>	
+</div><!-- /header -->
+
+<div class="block panel" id="about">
+	<div class="front" id="question">
+		<h2>Select the language you want to use Daily Myths in:</h2>
+		
+		<ul>
+			{{#nav}}<li><a title="{{language_en}}" href="/{{languagecode}}/{{../id}}"><span lang="{{languagecode}}">{{language}}</span></a></li>{{/nav}}
+		</ul>	
+		
+		
+	</div>
+</div><!-- /content -->
