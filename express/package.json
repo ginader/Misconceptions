@@ -10,7 +10,7 @@
     "version": "2.0.1-5",
     "private": true,
     "dependencies": {
-        "express": "2.5.8",
+        "express": ">= 2.5.8",
         "hbs": ">= 1.0.0",
         "yql": ">= 0.4.7",
         "request": ">= 2.9.202"
@@ -19,6 +19,6 @@
         "start": "node app.js"
     },
     "engines": {
-        "node": "0.10.x"
+        "node": ">=0.12.7"
     }
 }
